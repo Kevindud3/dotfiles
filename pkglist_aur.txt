@@ -1,0 +1,12 @@
+cantata
+hyprpolkitagent-git
+hyprshot
+hyprsunset
+hyprsysteminfo-git
+librewolf-bin
+mpdris2
+nordzy-cursors
+nordzy-hyprcursors
+spotdl
+umu-launcher-git
+xdg-terminal-exec-git
