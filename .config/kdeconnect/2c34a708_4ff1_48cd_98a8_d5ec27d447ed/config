@@ -1,0 +1,7 @@
+[Plugins]
+kdeconnect_bigscreenEnabled=false
+kdeconnect_connectivity_reportEnabled=false
+kdeconnect_contactsEnabled=false
+kdeconnect_lockdeviceEnabled=false
+kdeconnect_remotecommandsEnabled=false
+kdeconnect_runcommandEnabled=false

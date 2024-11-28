@@ -1,0 +1,578 @@
+{"level":30,"time":"2024-11-26T01:51:45.578Z","msg":"Profile Service initialized"}
+{"level":30,"time":"2024-11-26T01:51:45.733Z","msg":"libsignal net url: https://chat.signal.org"}
+{"level":30,"time":"2024-11-26T01:51:45.734Z","msg":"libsignal net environment resolved to prod"}
+{"level":30,"time":"2024-11-26T01:51:45.751Z","msg":"preload complete"}
+{"level":30,"time":"2024-11-26T01:51:45.752Z","msg":"@signalapp/libsignal-client Initializing libsignal version:0.60.2 signal_node::logging rust/bridge/node/src/logging.rs:206"}
+{"level":30,"time":"2024-11-26T01:51:45.752Z","msg":"@signalapp/libsignal-client Initializing connection manager for Prod... libsignal_bridge_types::net rust/bridge/shared/types/src/net.rs:72"}
+{"level":30,"time":"2024-11-26T01:51:45.809Z","msg":"NotificationService initialized"}
+{"level":30,"time":"2024-11-26T01:51:45.817Z","msg":"initializeMessageCounter: picking max of db/stored counters"}
+{"level":30,"time":"2024-11-26T01:51:45.817Z","msg":"Our profile key service: initializing"}
+{"level":30,"time":"2024-11-26T01:51:45.818Z","msg":"background page reloaded"}
+{"level":30,"time":"2024-11-26T01:51:45.818Z","msg":"environment: production"}
+{"level":30,"time":"2024-11-26T01:51:45.825Z","msg":"Storage fetch"}
+{"level":30,"time":"2024-11-26T01:51:45.833Z","msg":"SocketManager: connecting authenticated socket (hasStoriesDisabled=false)"}
+{"level":30,"time":"2024-11-26T01:51:45.834Z","msg":"Initializing MessageReceiver"}
+{"level":30,"time":"2024-11-26T01:51:45.834Z","msg":"Sender certificate service initialized"}
+{"level":30,"time":"2024-11-26T01:51:45.863Z","msg":"Starting background data migration. Target version: 14"}
+{"level":30,"time":"2024-11-26T01:51:45.864Z","msg":"RetryPlaceholders.constructor: Started with 0 items, lifespan of 3600000"}
+{"level":30,"time":"2024-11-26T01:51:45.864Z","msg":"ConversationController: starting initial fetch"}
+{"level":30,"time":"2024-11-26T01:51:45.864Z","msg":"GET (WS) https://chat.signal.org/v1/config"}
+{"level":30,"time":"2024-11-26T01:51:45.871Z","msg":"ConversationController: done with initial fetch, got 4 conversations"}
+{"level":30,"time":"2024-11-26T01:51:45.873Z","msg":"SignalProtocolStore: Finished caching sessions data"}
+{"level":30,"time":"2024-11-26T01:51:45.875Z","msg":"SignalProtocolStore: Finished caching identityKeys data"}
+{"level":30,"time":"2024-11-26T01:51:45.875Z","msg":"SignalProtocolStore: Finished caching senderKeys data"}
+{"level":30,"time":"2024-11-26T01:51:45.879Z","msg":"SignalProtocolStore: Finished caching preKeys data"}
+{"level":30,"time":"2024-11-26T01:51:45.894Z","msg":"SignalProtocolStore: Finished caching kyberPreKeys data"}
+{"level":30,"time":"2024-11-26T01:51:45.895Z","msg":"SignalProtocolStore: Finished caching signedPreKeys data"}
+{"level":30,"time":"2024-11-26T01:51:45.896Z","msg":"ConversationController.checkForConflicts: starting..."}
+{"level":30,"time":"2024-11-26T01:51:45.896Z","msg":"checkForConflicts: complete!"}
+{"level":30,"time":"2024-11-26T01:51:45.897Z","msg":"Storage/getItemsState: now preparing copy of items..."}
+{"level":30,"time":"2024-11-26T01:51:45.905Z","msg":"conversation job queue: starting to stream jobs"}
+{"level":30,"time":"2024-11-26T01:51:45.905Z","msg":"JobQueueDatabaseStore fetching existing jobs for queue \"conversation\""}
+{"level":30,"time":"2024-11-26T01:51:45.905Z","msg":"groupAvatar job queue: starting to stream jobs"}
+{"level":30,"time":"2024-11-26T01:51:45.905Z","msg":"JobQueueDatabaseStore fetching existing jobs for queue \"groupAvatar\""}
+{"level":30,"time":"2024-11-26T01:51:45.905Z","msg":"single proto job queue: starting to stream jobs"}
+{"level":30,"time":"2024-11-26T01:51:45.905Z","msg":"JobQueueDatabaseStore fetching existing jobs for queue \"single proto\""}
+{"level":30,"time":"2024-11-26T01:51:45.905Z","msg":"read sync job queue: starting to stream jobs"}
+{"level":30,"time":"2024-11-26T01:51:45.905Z","msg":"JobQueueDatabaseStore fetching existing jobs for queue \"read sync\""}
+{"level":30,"time":"2024-11-26T01:51:45.905Z","msg":"view sync job queue: starting to stream jobs"}
+{"level":30,"time":"2024-11-26T01:51:45.905Z","msg":"JobQueueDatabaseStore fetching existing jobs for queue \"view sync\""}
+{"level":30,"time":"2024-11-26T01:51:45.906Z","msg":"view once open sync job queue: starting to stream jobs"}
+{"level":30,"time":"2024-11-26T01:51:45.906Z","msg":"JobQueueDatabaseStore fetching existing jobs for queue \"view once open sync\""}
+{"level":30,"time":"2024-11-26T01:51:45.906Z","msg":"remove storage key job queue: starting to stream jobs"}
+{"level":30,"time":"2024-11-26T01:51:45.906Z","msg":"JobQueueDatabaseStore fetching existing jobs for queue \"remove storage key\""}
+{"level":30,"time":"2024-11-26T01:51:45.906Z","msg":"report spam job queue: starting to stream jobs"}
+{"level":30,"time":"2024-11-26T01:51:45.906Z","msg":"JobQueueDatabaseStore fetching existing jobs for queue \"report spam\""}
+{"level":30,"time":"2024-11-26T01:51:45.906Z","msg":"call link refresh job queue: starting to stream jobs"}
+{"level":30,"time":"2024-11-26T01:51:45.906Z","msg":"JobQueueDatabaseStore fetching existing jobs for queue \"call link refresh\""}
+{"level":30,"time":"2024-11-26T01:51:45.906Z","msg":"challenge: loading 0 challenges"}
+{"level":30,"time":"2024-11-26T01:51:45.906Z","msg":"Initializing network observer"}
+{"level":30,"time":"2024-11-26T01:51:45.929Z","msg":"BadgeDownloader#checkForFilesToDownload: downloading 0 badge(s)"}
+{"level":30,"time":"2024-11-26T01:51:45.929Z","msg":"Blocked uuids cleanup: starting..."}
+{"level":30,"time":"2024-11-26T01:51:45.929Z","msg":"Blocked uuids cleanup: complete"}
+{"level":30,"time":"2024-11-26T01:51:45.929Z","msg":"Expiration start timestamp cleanup: starting..."}
+{"level":30,"time":"2024-11-26T01:51:45.929Z","msg":"JobQueueDatabaseStore finished fetching existing 0 jobs for queue \"groupAvatar\""}
+{"level":30,"time":"2024-11-26T01:51:45.930Z","msg":"JobQueueDatabaseStore finished fetching existing 0 jobs for queue \"conversation\""}
+{"level":30,"time":"2024-11-26T01:51:45.930Z","msg":"JobQueueDatabaseStore finished fetching existing 0 jobs for queue \"read sync\""}
+{"level":30,"time":"2024-11-26T01:51:45.930Z","msg":"JobQueueDatabaseStore finished fetching existing 0 jobs for queue \"single proto\""}
+{"level":30,"time":"2024-11-26T01:51:45.930Z","msg":"JobQueueDatabaseStore finished fetching existing 0 jobs for queue \"view sync\""}
+{"level":30,"time":"2024-11-26T01:51:45.930Z","msg":"JobQueueDatabaseStore finished fetching existing 0 jobs for queue \"remove storage key\""}
+{"level":30,"time":"2024-11-26T01:51:45.930Z","msg":"JobQueueDatabaseStore finished fetching existing 0 jobs for queue \"view once open sync\""}
+{"level":30,"time":"2024-11-26T01:51:45.930Z","msg":"JobQueueDatabaseStore finished fetching existing 0 jobs for queue \"report spam\""}
+{"level":30,"time":"2024-11-26T01:51:45.930Z","msg":"JobQueueDatabaseStore finished fetching existing 0 jobs for queue \"call link refresh\""}
+{"level":30,"time":"2024-11-26T01:51:45.930Z","msg":"CallLinkDeleteJobType/enqueueAllDeletedCallLinks: Found 0 call links to delete"}
+{"level":30,"time":"2024-11-26T01:51:45.930Z","msg":"CallLinkFinalizeDeleteManager: starting"}
+{"level":30,"time":"2024-11-26T01:51:45.930Z","msg":"src/rust/src/core/call_manager.rs:468 RingRTC v2.48.7"}
+{"level":30,"time":"2024-11-26T01:51:45.930Z","msg":"src/rust/src/core/call_manager.rs:509 set_self_uuid():"}
+{"level":30,"time":"2024-11-26T01:51:45.931Z","msg":"Expiration start timestamp cleanup: Found 0 messages for cleanup"}
+{"level":30,"time":"2024-11-26T01:51:45.931Z","msg":"Expiration start timestamp cleanup: complete"}
+{"level":30,"time":"2024-11-26T01:51:45.931Z","msg":"Startup/syncTasks: Fetching tasks"}
+{"level":30,"time":"2024-11-26T01:51:45.932Z","msg":"Startup/syncTasks: Queueing 0 sync tasks"}
+{"level":30,"time":"2024-11-26T01:51:45.932Z","msg":"Startup/syncTasks: Done"}
+{"level":30,"time":"2024-11-26T01:51:45.932Z","msg":"listening for registration events"}
+{"level":30,"time":"2024-11-26T01:51:45.941Z","msg":"open inbox"}
+{"level":30,"time":"2024-11-26T01:51:45.941Z","msg":"afterStart(): emitting app-ready-for-processing"}
+{"level":30,"time":"2024-11-26T01:51:45.941Z","msg":"MessageReceiver.reset"}
+{"level":30,"time":"2024-11-26T01:51:45.942Z","msg":"MessageReceiver.addCachedMessagesToQueue"}
+{"level":30,"time":"2024-11-26T01:51:45.942Z","msg":"getAllFromCache"}
+{"level":40,"time":"2024-11-26T01:51:45.942Z","msg":"backups.download: no backup download path, skipping"}
+{"level":30,"time":"2024-11-26T01:51:45.945Z","msg":"afterStart: backup downloaded, resolving"}
+{"level":30,"time":"2024-11-26T01:51:45.945Z","msg":"MessageReceiver.reset"}
+{"level":30,"time":"2024-11-26T01:51:45.945Z","msg":"MessageReceiver.addCachedMessagesToQueue"}
+{"level":30,"time":"2024-11-26T01:51:45.945Z","msg":"background: connect unblocked by backups"}
+{"level":30,"time":"2024-11-26T01:51:45.945Z","msg":"setIsInitialSync(false)"}
+{"level":30,"time":"2024-11-26T01:51:45.945Z","msg":"background: connect {\"connectCount\":0}"}
+{"level":30,"time":"2024-11-26T01:51:45.945Z","msg":"Our profile key service: kicking off a new fetch"}
+{"level":30,"time":"2024-11-26T01:51:45.945Z","msg":"Our profile key service: waiting for 1 promises before fetching"}
+{"level":30,"time":"2024-11-26T01:51:45.945Z","msg":"Our profile key service: fetching profile key from storage"}
+{"level":30,"time":"2024-11-26T01:51:45.945Z","msg":"GET (WS) https://chat.signal.org/v1/config"}
+{"level":30,"time":"2024-11-26T01:51:45.946Z","msg":"getAllFromCache - 0 unprocessed"}
+{"level":30,"time":"2024-11-26T01:51:45.946Z","msg":"getAllFromCache - done retrieving 0 unprocessed"}
+{"level":30,"time":"2024-11-26T01:51:45.946Z","msg":"MessageReceiver.queueAllCached - finished"}
+{"level":30,"time":"2024-11-26T01:51:45.946Z","msg":"getAllFromCache"}
+{"level":30,"time":"2024-11-26T01:51:45.948Z","msg":"getAllFromCache - 0 unprocessed"}
+{"level":30,"time":"2024-11-26T01:51:45.948Z","msg":"getAllFromCache - done retrieving 0 unprocessed"}
+{"level":30,"time":"2024-11-26T01:51:45.948Z","msg":"MessageReceiver.queueAllCached - finished"}
+{"level":30,"time":"2024-11-26T01:51:46.134Z","msg":"createHTTPSAgent.createConnection(chat.signal.org): connected to IPv6 addr after 285ms (attempts v4=0 v6=1)"}
+{"level":30,"time":"2024-11-26T01:51:46.289Z","msg":"WebSocketResource(authenticated) connected in 453.6ms"}
+{"level":30,"time":"2024-11-26T01:51:46.292Z","msg":"pauseQueuesAndNotificationsOnSocketConnect: pausing"}
+{"level":30,"time":"2024-11-26T01:51:46.293Z","msg":"NotificationService: disabling"}
+{"level":30,"time":"2024-11-26T01:51:46.294Z","msg":"MessageReceiver.reset"}
+{"level":30,"time":"2024-11-26T01:51:46.294Z","msg":"MessageReceiver.addCachedMessagesToQueue"}
+{"level":30,"time":"2024-11-26T01:51:46.294Z","msg":"getAllFromCache"}
+{"level":30,"time":"2024-11-26T01:51:46.295Z","msg":"background: online"}
+{"level":40,"time":"2024-11-26T01:51:46.295Z","msg":"background: connect already running {\"connectCount\":0}"}
+{"level":30,"time":"2024-11-26T01:51:46.295Z","msg":"SocketManager: connected authenticated socket (localPort: 49108)"}
+{"level":30,"time":"2024-11-26T01:51:46.306Z","msg":"getAllFromCache - 0 unprocessed"}
+{"level":30,"time":"2024-11-26T01:51:46.307Z","msg":"getAllFromCache - done retrieving 0 unprocessed"}
+{"level":30,"time":"2024-11-26T01:51:46.307Z","msg":"MessageReceiver.queueAllCached - finished"}
+{"level":30,"time":"2024-11-26T01:51:46.311Z","msg":"MessageReceiver: got request /api/v1/message"}
+{"level":30,"time":"2024-11-26T01:51:46.314Z","msg":"MessageReceiver: got request /api/v1/message"}
+{"level":30,"time":"2024-11-26T01:51:46.315Z","msg":"MessageReceiver: got request /api/v1/message"}
+{"level":30,"time":"2024-11-26T01:51:46.315Z","msg":"MessageReceiver: got request /api/v1/message"}
+{"level":30,"time":"2024-11-26T01:51:46.316Z","msg":"MessageReceiver: got request /api/v1/message"}
+{"level":30,"time":"2024-11-26T01:51:46.316Z","msg":"MessageReceiver: got request /api/v1/message"}
+{"level":30,"time":"2024-11-26T01:51:46.379Z","msg":"MessageReceiver: got request /api/v1/message"}
+{"level":30,"time":"2024-11-26T01:51:46.381Z","msg":"MessageReceiver: got request /api/v1/message"}
+{"level":30,"time":"2024-11-26T01:51:46.382Z","msg":"MessageReceiver: got request /api/v1/message"}
+{"level":30,"time":"2024-11-26T01:51:46.383Z","msg":"MessageReceiver: got request /api/v1/message"}
+{"level":30,"time":"2024-11-26T01:51:46.384Z","msg":"MessageReceiver: got request /api/v1/message"}
+{"level":30,"time":"2024-11-26T01:51:46.385Z","msg":"MessageReceiver: got request /api/v1/message"}
+{"level":30,"time":"2024-11-26T01:51:46.386Z","msg":"MessageReceiver: got request /api/v1/message"}
+{"level":30,"time":"2024-11-26T01:51:46.387Z","msg":"MessageReceiver: got request /api/v1/message"}
+{"level":30,"time":"2024-11-26T01:51:46.389Z","msg":"MessageReceiver.decryptAndCacheBatch 14"}
+{"level":30,"time":"2024-11-26T01:51:46.390Z","msg":"SignalProtocolStore.enterZone(decryptAndCacheBatch:MessageReceiver)"}
+{"level":30,"time":"2024-11-26T01:51:46.391Z","msg":"queueing envelope [REDACTED]9e5.4 > [REDACTED]9e5 1732573790338 (486a5d3eab4a4033b33caa8dd2db1331)"}
+{"level":30,"time":"2024-11-26T01:51:46.393Z","msg":"queueing envelope [REDACTED]9e5.4 > [REDACTED]9e5 1732573790926 (fdcb800b2078452a9119064257b0928f)"}
+{"level":30,"time":"2024-11-26T01:51:46.393Z","msg":"queueing envelope [REDACTED]9e5.4 > [REDACTED]9e5 1732573790927 (84f35bd082594a968aef11d871dac50c)"}
+{"level":30,"time":"2024-11-26T01:51:46.393Z","msg":"queueing envelope [REDACTED]9e5.4 > [REDACTED]9e5 1732573790927 (2e9b0a1e8c884e34831594a4052d1ea9)"}
+{"level":30,"time":"2024-11-26T01:51:46.394Z","msg":"queueing envelope [REDACTED]9e5.1 > [REDACTED]9e5 1732573797026 (d6a3076e34004b40a945571562cd13b2)"}
+{"level":30,"time":"2024-11-26T01:51:46.394Z","msg":"queueing envelope [REDACTED]9e5.1 > [REDACTED]9e5 1732573797016 (06e515a399ac482e92872d5ef62ac283)"}
+{"level":30,"time":"2024-11-26T01:51:46.394Z","msg":"queueing envelope [REDACTED]9e5.1 > [REDACTED]9e5 1732573797328 (7b3e2129605946988d0deb406c2cda38)"}
+{"level":30,"time":"2024-11-26T01:51:46.394Z","msg":"queueing envelope [REDACTED]9e5.4 > [REDACTED]9e5 1732573792131 (abfd5d4025a74700a18613fde29eaefb)"}
+{"level":30,"time":"2024-11-26T01:51:46.394Z","msg":"queueing envelope [REDACTED]9e5.1 > [REDACTED]9e5 1732573798804 (c8ad511e79de45b8b46a351ca5d88c6d)"}
+{"level":30,"time":"2024-11-26T01:51:46.394Z","msg":"queueing envelope [REDACTED]9e5.4 > [REDACTED]9e5 1732573801271 (8d7e8d3fa7e14c3381e67d3e944b24ad)"}
+{"level":30,"time":"2024-11-26T01:51:46.394Z","msg":"queueing envelope [REDACTED]9e5.4 > [REDACTED]9e5 1732573811427 (b02f051afb9e41eabb4995a136a066c3)"}
+{"level":30,"time":"2024-11-26T01:51:46.395Z","msg":"queueing envelope [REDACTED]9e5.4 > [REDACTED]9e5 1732573812438 (878cc5a7abf74b9d832573ffded2303f)"}
+{"level":30,"time":"2024-11-26T01:51:46.395Z","msg":"queueing envelope [REDACTED]9e5.1 > [REDACTED]9e5 1732573848275 (f145bc37b45d4431bd655a339cb7ef15)"}
+{"level":30,"time":"2024-11-26T01:51:46.395Z","msg":"queueing envelope [REDACTED]9e5.1 > [REDACTED]9e5 1732573848686 (fbb410628b38496d90038a9d51c8bcf0)"}
+{"level":30,"time":"2024-11-26T01:51:46.398Z","msg":"MessageReceiver.decryptEnvelope([REDACTED]9e5.4 > [REDACTED]9e5 1732573790338 (486a5d3eab4a4033b33caa8dd2db1331))"}
+{"level":30,"time":"2024-11-26T01:51:46.400Z","msg":"decrypt/[REDACTED]9e5.4 > [REDACTED]9e5 1732573790338 (486a5d3eab4a4033b33caa8dd2db1331): prekey message"}
+{"level":30,"time":"2024-11-26T01:51:46.402Z","msg":"enqueueSessionJob(1): queuing task signalDecryptPreKey([REDACTED]9e5:[REDACTED]9e5.4), waited 0ms"}
+{"level":30,"time":"2024-11-26T01:51:46.403Z","msg":"enqueueSessionJob(1): running task signalDecryptPreKey([REDACTED]9e5:[REDACTED]9e5.4), waited 0ms"}
+{"level":30,"time":"2024-11-26T01:51:46.410Z","msg":"Successfully fetched signed prekey (cache miss): [REDACTED]9e5:1"}
+{"level":30,"time":"2024-11-26T01:51:46.411Z","msg":"loadKyberPreKey: Successfully fetched kyberPreKey (cache miss): [REDACTED]9e5:3"}
+{"level":30,"time":"2024-11-26T01:51:46.411Z","msg":"@signalapp/libsignal-client processing PreKey message from [REDACTED]9e5.4 libsignal_protocol::session /home/libsignal/src/rust/protocol/src/session.rs:107"}
+{"level":30,"time":"2024-11-26T01:51:46.412Z","msg":"Successfully fetched prekey (cache miss): [REDACTED]9e5:2"}
+{"level":30,"time":"2024-11-26T01:51:46.417Z","msg":"@signalapp/libsignal-client [REDACTED]9e5.4 creating new chains. libsignal_protocol::session_cipher /home/libsignal/src/rust/protocol/src/session_cipher.rs:659"}
+{"level":30,"time":"2024-11-26T01:51:46.417Z","msg":"@signalapp/libsignal-client decrypted PreKey message from [REDACTED]9e5.4 with current session state (base key [REDACTED]b02) libsignal_protocol::session_cipher /home/libsignal/src/rust/protocol/src/session_cipher.rs:457"}
+{"level":30,"time":"2024-11-26T01:51:46.418Z","msg":"removePreKeys: Removing prekeys: 2"}
+{"level":30,"time":"2024-11-26T01:51:46.421Z","msg":"removePreKeys: Removed 1 prekeys"}
+{"level":30,"time":"2024-11-26T01:51:46.422Z","msg":"maybeRemoveKyberPreKey: Successfully fetched kyber prekey (cache hit): [REDACTED]9e5:3"}
+{"level":30,"time":"2024-11-26T01:51:46.422Z","msg":"removeKyberPreKeys: Removing kyber prekeys: 3"}
+{"level":30,"time":"2024-11-26T01:51:46.425Z","msg":"removeKyberPreKeys: Removed 1 kyber prekeys"}
+{"level":30,"time":"2024-11-26T01:51:46.427Z","msg":"MessageReceiver.decryptEnvelope([REDACTED]9e5.4 > [REDACTED]9e5 1732573790926 (fdcb800b2078452a9119064257b0928f))"}
+{"level":30,"time":"2024-11-26T01:51:46.427Z","msg":"decrypt/[REDACTED]9e5.4 > [REDACTED]9e5 1732573790926 (fdcb800b2078452a9119064257b0928f): prekey message"}
+{"level":30,"time":"2024-11-26T01:51:46.427Z","msg":"enqueueSessionJob(2): queuing task signalDecryptPreKey([REDACTED]9e5:[REDACTED]9e5.4), waited 0ms"}
+{"level":30,"time":"2024-11-26T01:51:46.427Z","msg":"enqueueSessionJob(2): running task signalDecryptPreKey([REDACTED]9e5:[REDACTED]9e5.4), waited 0ms"}
+{"level":30,"time":"2024-11-26T01:51:46.427Z","msg":"@signalapp/libsignal-client decrypted PreKey message from [REDACTED]9e5.4 with current session state (base key [REDACTED]b02) libsignal_protocol::session_cipher /home/libsignal/src/rust/protocol/src/session_cipher.rs:457"}
+{"level":30,"time":"2024-11-26T01:51:46.428Z","msg":"MessageReceiver.decryptEnvelope([REDACTED]9e5.4 > [REDACTED]9e5 1732573790927 (84f35bd082594a968aef11d871dac50c))"}
+{"level":30,"time":"2024-11-26T01:51:46.428Z","msg":"decrypt/[REDACTED]9e5.4 > [REDACTED]9e5 1732573790927 (84f35bd082594a968aef11d871dac50c): prekey message"}
+{"level":30,"time":"2024-11-26T01:51:46.428Z","msg":"enqueueSessionJob(3): queuing task signalDecryptPreKey([REDACTED]9e5:[REDACTED]9e5.4), waited 0ms"}
+{"level":30,"time":"2024-11-26T01:51:46.428Z","msg":"enqueueSessionJob(3): running task signalDecryptPreKey([REDACTED]9e5:[REDACTED]9e5.4), waited 0ms"}
+{"level":30,"time":"2024-11-26T01:51:46.428Z","msg":"@signalapp/libsignal-client decrypted PreKey message from [REDACTED]9e5.4 with current session state (base key [REDACTED]b02) libsignal_protocol::session_cipher /home/libsignal/src/rust/protocol/src/session_cipher.rs:457"}
+{"level":30,"time":"2024-11-26T01:51:46.429Z","msg":"MessageReceiver.decryptEnvelope([REDACTED]9e5.4 > [REDACTED]9e5 1732573790927 (2e9b0a1e8c884e34831594a4052d1ea9))"}
+{"level":30,"time":"2024-11-26T01:51:46.429Z","msg":"decrypt/[REDACTED]9e5.4 > [REDACTED]9e5 1732573790927 (2e9b0a1e8c884e34831594a4052d1ea9): prekey message"}
+{"level":30,"time":"2024-11-26T01:51:46.429Z","msg":"enqueueSessionJob(4): queuing task signalDecryptPreKey([REDACTED]9e5:[REDACTED]9e5.4), waited 0ms"}
+{"level":30,"time":"2024-11-26T01:51:46.429Z","msg":"enqueueSessionJob(4): running task signalDecryptPreKey([REDACTED]9e5:[REDACTED]9e5.4), waited 0ms"}
+{"level":30,"time":"2024-11-26T01:51:46.430Z","msg":"@signalapp/libsignal-client decrypted PreKey message from [REDACTED]9e5.4 with current session state (base key [REDACTED]b02) libsignal_protocol::session_cipher /home/libsignal/src/rust/protocol/src/session_cipher.rs:457"}
+{"level":30,"time":"2024-11-26T01:51:46.430Z","msg":"MessageReceiver.decryptEnvelope([REDACTED]9e5.1 > [REDACTED]9e5 1732573797026 (d6a3076e34004b40a945571562cd13b2))"}
+{"level":30,"time":"2024-11-26T01:51:46.430Z","msg":"decrypt/[REDACTED]9e5.1 > [REDACTED]9e5 1732573797026 (d6a3076e34004b40a945571562cd13b2): ciphertext message"}
+{"level":30,"time":"2024-11-26T01:51:46.430Z","msg":"enqueueSessionJob(5): queuing task signalDecrypt([REDACTED]9e5:[REDACTED]9e5.1), waited 0ms"}
+{"level":30,"time":"2024-11-26T01:51:46.430Z","msg":"enqueueSessionJob(5): running task signalDecrypt([REDACTED]9e5:[REDACTED]9e5.1), waited 0ms"}
+{"level":30,"time":"2024-11-26T01:51:46.431Z","msg":"@signalapp/libsignal-client decrypted Whisper message from [REDACTED]9e5.1 with current session state (base key [REDACTED]c12) libsignal_protocol::session_cipher /home/libsignal/src/rust/protocol/src/session_cipher.rs:457"}
+{"level":30,"time":"2024-11-26T01:51:46.432Z","msg":"MessageReceiver.decryptEnvelope([REDACTED]9e5.1 > [REDACTED]9e5 1732573797016 (06e515a399ac482e92872d5ef62ac283))"}
+{"level":30,"time":"2024-11-26T01:51:46.432Z","msg":"decrypt/[REDACTED]9e5.1 > [REDACTED]9e5 1732573797016 (06e515a399ac482e92872d5ef62ac283): ciphertext message"}
+{"level":30,"time":"2024-11-26T01:51:46.432Z","msg":"enqueueSessionJob(6): queuing task signalDecrypt([REDACTED]9e5:[REDACTED]9e5.1), waited 0ms"}
+{"level":30,"time":"2024-11-26T01:51:46.432Z","msg":"enqueueSessionJob(6): running task signalDecrypt([REDACTED]9e5:[REDACTED]9e5.1), waited 0ms"}
+{"level":30,"time":"2024-11-26T01:51:46.432Z","msg":"@signalapp/libsignal-client decrypted Whisper message from [REDACTED]9e5.1 with current session state (base key [REDACTED]c12) libsignal_protocol::session_cipher /home/libsignal/src/rust/protocol/src/session_cipher.rs:457"}
+{"level":30,"time":"2024-11-26T01:51:46.433Z","msg":"MessageReceiver.decryptEnvelope([REDACTED]9e5.1 > [REDACTED]9e5 1732573797328 (7b3e2129605946988d0deb406c2cda38))"}
+{"level":30,"time":"2024-11-26T01:51:46.433Z","msg":"decrypt/[REDACTED]9e5.1 > [REDACTED]9e5 1732573797328 (7b3e2129605946988d0deb406c2cda38): ciphertext message"}
+{"level":30,"time":"2024-11-26T01:51:46.433Z","msg":"enqueueSessionJob(7): queuing task signalDecrypt([REDACTED]9e5:[REDACTED]9e5.1), waited 0ms"}
+{"level":30,"time":"2024-11-26T01:51:46.433Z","msg":"enqueueSessionJob(7): running task signalDecrypt([REDACTED]9e5:[REDACTED]9e5.1), waited 0ms"}
+{"level":30,"time":"2024-11-26T01:51:46.434Z","msg":"@signalapp/libsignal-client decrypted Whisper message from [REDACTED]9e5.1 with current session state (base key [REDACTED]c12) libsignal_protocol::session_cipher /home/libsignal/src/rust/protocol/src/session_cipher.rs:457"}
+{"level":30,"time":"2024-11-26T01:51:46.434Z","msg":"MessageReceiver.decryptEnvelope([REDACTED]9e5.4 > [REDACTED]9e5 1732573792131 (abfd5d4025a74700a18613fde29eaefb))"}
+{"level":30,"time":"2024-11-26T01:51:46.434Z","msg":"decrypt/[REDACTED]9e5.4 > [REDACTED]9e5 1732573792131 (abfd5d4025a74700a18613fde29eaefb): prekey message"}
+{"level":30,"time":"2024-11-26T01:51:46.435Z","msg":"enqueueSessionJob(8): queuing task signalDecryptPreKey([REDACTED]9e5:[REDACTED]9e5.4), waited 0ms"}
+{"level":30,"time":"2024-11-26T01:51:46.435Z","msg":"enqueueSessionJob(8): running task signalDecryptPreKey([REDACTED]9e5:[REDACTED]9e5.4), waited 0ms"}
+{"level":30,"time":"2024-11-26T01:51:46.435Z","msg":"@signalapp/libsignal-client decrypted PreKey message from [REDACTED]9e5.4 with current session state (base key [REDACTED]b02) libsignal_protocol::session_cipher /home/libsignal/src/rust/protocol/src/session_cipher.rs:457"}
+{"level":30,"time":"2024-11-26T01:51:46.436Z","msg":"MessageReceiver.decryptEnvelope([REDACTED]9e5.1 > [REDACTED]9e5 1732573798804 (c8ad511e79de45b8b46a351ca5d88c6d))"}
+{"level":30,"time":"2024-11-26T01:51:46.436Z","msg":"decrypt/[REDACTED]9e5.1 > [REDACTED]9e5 1732573798804 (c8ad511e79de45b8b46a351ca5d88c6d): ciphertext message"}
+{"level":30,"time":"2024-11-26T01:51:46.436Z","msg":"enqueueSessionJob(9): queuing task signalDecrypt([REDACTED]9e5:[REDACTED]9e5.1), waited 0ms"}
+{"level":30,"time":"2024-11-26T01:51:46.436Z","msg":"enqueueSessionJob(9): running task signalDecrypt([REDACTED]9e5:[REDACTED]9e5.1), waited 0ms"}
+{"level":30,"time":"2024-11-26T01:51:46.436Z","msg":"@signalapp/libsignal-client decrypted Whisper message from [REDACTED]9e5.1 with current session state (base key [REDACTED]c12) libsignal_protocol::session_cipher /home/libsignal/src/rust/protocol/src/session_cipher.rs:457"}
+{"level":30,"time":"2024-11-26T01:51:46.438Z","msg":"MessageReceiver.decryptEnvelope([REDACTED]9e5.4 > [REDACTED]9e5 1732573801271 (8d7e8d3fa7e14c3381e67d3e944b24ad))"}
+{"level":30,"time":"2024-11-26T01:51:46.438Z","msg":"decrypt/[REDACTED]9e5.4 > [REDACTED]9e5 1732573801271 (8d7e8d3fa7e14c3381e67d3e944b24ad): prekey message"}
+{"level":30,"time":"2024-11-26T01:51:46.438Z","msg":"enqueueSessionJob(10): queuing task signalDecryptPreKey([REDACTED]9e5:[REDACTED]9e5.4), waited 0ms"}
+{"level":30,"time":"2024-11-26T01:51:46.438Z","msg":"enqueueSessionJob(10): running task signalDecryptPreKey([REDACTED]9e5:[REDACTED]9e5.4), waited 0ms"}
+{"level":30,"time":"2024-11-26T01:51:46.438Z","msg":"@signalapp/libsignal-client decrypted PreKey message from [REDACTED]9e5.4 with current session state (base key [REDACTED]b02) libsignal_protocol::session_cipher /home/libsignal/src/rust/protocol/src/session_cipher.rs:457"}
+{"level":30,"time":"2024-11-26T01:51:46.439Z","msg":"incrementProgress: Message count is 10"}
+{"level":30,"time":"2024-11-26T01:51:46.439Z","msg":"MessageReceiver.decryptEnvelope([REDACTED]9e5.4 > [REDACTED]9e5 1732573811427 (b02f051afb9e41eabb4995a136a066c3))"}
+{"level":30,"time":"2024-11-26T01:51:46.439Z","msg":"decrypt/[REDACTED]9e5.4 > [REDACTED]9e5 1732573811427 (b02f051afb9e41eabb4995a136a066c3): prekey message"}
+{"level":30,"time":"2024-11-26T01:51:46.439Z","msg":"enqueueSessionJob(11): queuing task signalDecryptPreKey([REDACTED]9e5:[REDACTED]9e5.4), waited 0ms"}
+{"level":30,"time":"2024-11-26T01:51:46.439Z","msg":"enqueueSessionJob(11): running task signalDecryptPreKey([REDACTED]9e5:[REDACTED]9e5.4), waited 0ms"}
+{"level":30,"time":"2024-11-26T01:51:46.440Z","msg":"@signalapp/libsignal-client decrypted PreKey message from [REDACTED]9e5.4 with current session state (base key [REDACTED]b02) libsignal_protocol::session_cipher /home/libsignal/src/rust/protocol/src/session_cipher.rs:457"}
+{"level":30,"time":"2024-11-26T01:51:46.441Z","msg":"MessageReceiver.decryptEnvelope([REDACTED]9e5.4 > [REDACTED]9e5 1732573812438 (878cc5a7abf74b9d832573ffded2303f))"}
+{"level":30,"time":"2024-11-26T01:51:46.441Z","msg":"decrypt/[REDACTED]9e5.4 > [REDACTED]9e5 1732573812438 (878cc5a7abf74b9d832573ffded2303f): prekey message"}
+{"level":30,"time":"2024-11-26T01:51:46.441Z","msg":"enqueueSessionJob(12): queuing task signalDecryptPreKey([REDACTED]9e5:[REDACTED]9e5.4), waited 0ms"}
+{"level":30,"time":"2024-11-26T01:51:46.441Z","msg":"enqueueSessionJob(12): running task signalDecryptPreKey([REDACTED]9e5:[REDACTED]9e5.4), waited 0ms"}
+{"level":30,"time":"2024-11-26T01:51:46.441Z","msg":"@signalapp/libsignal-client decrypted PreKey message from [REDACTED]9e5.4 with current session state (base key [REDACTED]b02) libsignal_protocol::session_cipher /home/libsignal/src/rust/protocol/src/session_cipher.rs:457"}
+{"level":30,"time":"2024-11-26T01:51:46.442Z","msg":"MessageReceiver.decryptEnvelope([REDACTED]9e5.1 > [REDACTED]9e5 1732573848275 (f145bc37b45d4431bd655a339cb7ef15))"}
+{"level":30,"time":"2024-11-26T01:51:46.442Z","msg":"decrypt/[REDACTED]9e5.1 > [REDACTED]9e5 1732573848275 (f145bc37b45d4431bd655a339cb7ef15): ciphertext message"}
+{"level":30,"time":"2024-11-26T01:51:46.442Z","msg":"enqueueSessionJob(13): queuing task signalDecrypt([REDACTED]9e5:[REDACTED]9e5.1), waited 0ms"}
+{"level":30,"time":"2024-11-26T01:51:46.442Z","msg":"enqueueSessionJob(13): running task signalDecrypt([REDACTED]9e5:[REDACTED]9e5.1), waited 0ms"}
+{"level":30,"time":"2024-11-26T01:51:46.442Z","msg":"@signalapp/libsignal-client decrypted Whisper message from [REDACTED]9e5.1 with current session state (base key [REDACTED]c12) libsignal_protocol::session_cipher /home/libsignal/src/rust/protocol/src/session_cipher.rs:457"}
+{"level":30,"time":"2024-11-26T01:51:46.443Z","msg":"MessageReceiver.decryptEnvelope([REDACTED]9e5.1 > [REDACTED]9e5 1732573848686 (fbb410628b38496d90038a9d51c8bcf0))"}
+{"level":30,"time":"2024-11-26T01:51:46.443Z","msg":"decrypt/[REDACTED]9e5.1 > [REDACTED]9e5 1732573848686 (fbb410628b38496d90038a9d51c8bcf0): ciphertext message"}
+{"level":30,"time":"2024-11-26T01:51:46.443Z","msg":"enqueueSessionJob(14): queuing task signalDecrypt([REDACTED]9e5:[REDACTED]9e5.1), waited 0ms"}
+{"level":30,"time":"2024-11-26T01:51:46.443Z","msg":"enqueueSessionJob(14): running task signalDecrypt([REDACTED]9e5:[REDACTED]9e5.1), waited 0ms"}
+{"level":30,"time":"2024-11-26T01:51:46.443Z","msg":"@signalapp/libsignal-client decrypted Whisper message from [REDACTED]9e5.1 with current session state (base key [REDACTED]c12) libsignal_protocol::session_cipher /home/libsignal/src/rust/protocol/src/session_cipher.rs:457"}
+{"level":30,"time":"2024-11-26T01:51:46.444Z","msg":"MessageReceiver.decryptAndCacheBatch storing 14 decrypted envelopes, keeping 0 failed envelopes."}
+{"level":30,"time":"2024-11-26T01:51:46.444Z","msg":"commitZoneChanges(MessageReceiver): pending sender keys 0, pending sessions 2, pending unprocessed 14"}
+{"level":30,"time":"2024-11-26T01:51:46.450Z","msg":"GET (WS) https://chat.signal.org/v1/config 200 Success"}
+{"level":30,"time":"2024-11-26T01:51:46.455Z","msg":"GET (WS) https://chat.signal.org/v1/config 200 Success"}
+{"level":30,"time":"2024-11-26T01:51:46.457Z","msg":"storageService.sync: starting... ignoreConflicts=false, reason=runStorageService/afterStart"}
+{"level":30,"time":"2024-11-26T01:51:46.457Z","msg":"storageService.sync: fetching latest after version=177"}
+{"level":30,"time":"2024-11-26T01:51:46.458Z","msg":"storageService.sync: fetch start"}
+{"level":30,"time":"2024-11-26T01:51:46.458Z","msg":"GET (WS) https://chat.signal.org/v1/storage/auth"}
+{"level":30,"time":"2024-11-26T01:51:46.458Z","msg":"SignalProtocolStore.leaveZone(decryptAndCacheBatch)"}
+{"level":30,"time":"2024-11-26T01:51:46.458Z","msg":"MessageReceiver.decryptAndCacheBatch acknowledging receipt"}
+{"level":30,"time":"2024-11-26T01:51:46.459Z","msg":"queueing decrypted envelope [REDACTED]9e5.4 > [REDACTED]9e5 1732573790338 (486a5d3eab4a4033b33caa8dd2db1331)"}
+{"level":30,"time":"2024-11-26T01:51:46.460Z","msg":"queueing decrypted envelope [REDACTED]9e5.4 > [REDACTED]9e5 1732573790926 (fdcb800b2078452a9119064257b0928f)"}
+{"level":30,"time":"2024-11-26T01:51:46.460Z","msg":"queueing decrypted envelope [REDACTED]9e5.4 > [REDACTED]9e5 1732573790927 (84f35bd082594a968aef11d871dac50c)"}
+{"level":30,"time":"2024-11-26T01:51:46.460Z","msg":"queueing decrypted envelope [REDACTED]9e5.4 > [REDACTED]9e5 1732573790927 (2e9b0a1e8c884e34831594a4052d1ea9)"}
+{"level":30,"time":"2024-11-26T01:51:46.460Z","msg":"queueing decrypted envelope [REDACTED]9e5.1 > [REDACTED]9e5 1732573797026 (d6a3076e34004b40a945571562cd13b2)"}
+{"level":30,"time":"2024-11-26T01:51:46.460Z","msg":"queueing decrypted envelope [REDACTED]9e5.1 > [REDACTED]9e5 1732573797016 (06e515a399ac482e92872d5ef62ac283)"}
+{"level":30,"time":"2024-11-26T01:51:46.460Z","msg":"queueing decrypted envelope [REDACTED]9e5.1 > [REDACTED]9e5 1732573797328 (7b3e2129605946988d0deb406c2cda38)"}
+{"level":30,"time":"2024-11-26T01:51:46.460Z","msg":"queueing decrypted envelope [REDACTED]9e5.4 > [REDACTED]9e5 1732573792131 (abfd5d4025a74700a18613fde29eaefb)"}
+{"level":30,"time":"2024-11-26T01:51:46.460Z","msg":"queueing decrypted envelope [REDACTED]9e5.1 > [REDACTED]9e5 1732573798804 (c8ad511e79de45b8b46a351ca5d88c6d)"}
+{"level":30,"time":"2024-11-26T01:51:46.460Z","msg":"queueing decrypted envelope [REDACTED]9e5.4 > [REDACTED]9e5 1732573801271 (8d7e8d3fa7e14c3381e67d3e944b24ad)"}
+{"level":30,"time":"2024-11-26T01:51:46.460Z","msg":"queueing decrypted envelope [REDACTED]9e5.4 > [REDACTED]9e5 1732573811427 (b02f051afb9e41eabb4995a136a066c3)"}
+{"level":30,"time":"2024-11-26T01:51:46.460Z","msg":"queueing decrypted envelope [REDACTED]9e5.4 > [REDACTED]9e5 1732573812438 (878cc5a7abf74b9d832573ffded2303f)"}
+{"level":30,"time":"2024-11-26T01:51:46.460Z","msg":"queueing decrypted envelope [REDACTED]9e5.1 > [REDACTED]9e5 1732573848275 (f145bc37b45d4431bd655a339cb7ef15)"}
+{"level":30,"time":"2024-11-26T01:51:46.460Z","msg":"queueing decrypted envelope [REDACTED]9e5.1 > [REDACTED]9e5 1732573848686 (fbb410628b38496d90038a9d51c8bcf0)"}
+{"level":30,"time":"2024-11-26T01:51:46.460Z","msg":"got fetch latest sync message [REDACTED]9e5.4 > [REDACTED]9e5 1732573790338 (486a5d3eab4a4033b33caa8dd2db1331)"}
+{"level":30,"time":"2024-11-26T01:51:46.461Z","msg":"onFetchLatestSync: fetching latest local profile"}
+{"level":30,"time":"2024-11-26T01:51:46.462Z","msg":"buildGetProfileOptions([REDACTED]9e5 ([REDACTED]646)): using unexpired profile key credential"}
+{"level":30,"time":"2024-11-26T01:51:46.462Z","msg":"getProfile([REDACTED]9e5 ([REDACTED]646)): Fetching profile (versioned, unauth: accessKey)"}
+{"level":30,"time":"2024-11-26T01:51:46.463Z","msg":"GET (WS) https://chat.signal.org/v1/profile/[REDACTED]9e5/[REDACTED]1b9 (unauth)"}
+{"level":30,"time":"2024-11-26T01:51:46.463Z","msg":"SocketManager: connecting unauthenticated socket"}
+{"level":30,"time":"2024-11-26T01:51:46.463Z","msg":"SocketManager: connecting unauthenticated socket, transport option [original]"}
+{"level":30,"time":"2024-11-26T01:51:46.464Z","msg":"Got SyncMessage Request"}
+{"level":30,"time":"2024-11-26T01:51:46.464Z","msg":"Got SyncMessage Request"}
+{"level":30,"time":"2024-11-26T01:51:46.464Z","msg":"Got SyncMessage Request"}
+{"level":30,"time":"2024-11-26T01:51:46.464Z","msg":"got sticker pack operation sync message [REDACTED]9e5.1 > [REDACTED]9e5 1732573797026 (d6a3076e34004b40a945571562cd13b2)"}
+{"level":30,"time":"2024-11-26T01:51:46.466Z","msg":"got configuration sync message [REDACTED]9e5.1 > [REDACTED]9e5 1732573797016 (06e515a399ac482e92872d5ef62ac283)"}
+{"level":30,"time":"2024-11-26T01:51:46.466Z","msg":"handleBlocked([REDACTED]9e5.1 > [REDACTED]9e5 1732573797328 (7b3e2129605946988d0deb406c2cda38)): New e164 blocks: []"}
+{"level":30,"time":"2024-11-26T01:51:46.467Z","msg":"handleBlocked([REDACTED]9e5.1 > [REDACTED]9e5 1732573797328 (7b3e2129605946988d0deb406c2cda38)): New e164 unblocks: []"}
+{"level":30,"time":"2024-11-26T01:51:46.469Z","msg":"handleBlocked([REDACTED]9e5.1 > [REDACTED]9e5 1732573797328 (7b3e2129605946988d0deb406c2cda38)): New aci blocks: []"}
+{"level":30,"time":"2024-11-26T01:51:46.469Z","msg":"handleBlocked([REDACTED]9e5.1 > [REDACTED]9e5 1732573797328 (7b3e2129605946988d0deb406c2cda38)): New aci unblocks: []"}
+{"level":30,"time":"2024-11-26T01:51:46.471Z","msg":"initializeGroupCredentialFetcher: starting..."}
+{"level":30,"time":"2024-11-26T01:51:46.471Z","msg":"maybeFetchNewCredentials: fetching credentials for 1733011200000 through 1733097600000"}
+{"level":30,"time":"2024-11-26T01:51:46.471Z","msg":"Flushing saveAttachmentDownloadJobs batcher items.length=0"}
+{"level":30,"time":"2024-11-26T01:51:46.471Z","msg":"Flushing complete saveAttachmentDownloadJobs for batcher"}
+{"level":30,"time":"2024-11-26T01:51:46.471Z","msg":"downloadQueuedPacks"}
+{"level":30,"time":"2024-11-26T01:51:46.471Z","msg":"GET (WS) https://chat.signal.org/v1/certificate/auth/group?redemptionStartSeconds=1733011200&redemptionEndSeconds=1733097600&zkcCredential=true"}
+{"level":30,"time":"2024-11-26T01:51:46.472Z","msg":"PUT (WS) https://chat.signal.org/v1/devices/capabilities"}
+{"level":30,"time":"2024-11-26T01:51:46.472Z","msg":"AttachmentDownloadManager: starting"}
+{"level":30,"time":"2024-11-26T01:51:46.473Z","msg":"handleBlocked([REDACTED]9e5.1 > [REDACTED]9e5 1732573797328 (7b3e2129605946988d0deb406c2cda38)): New groupId blocks: []"}
+{"level":30,"time":"2024-11-26T01:51:46.473Z","msg":"handleBlocked([REDACTED]9e5.1 > [REDACTED]9e5 1732573797328 (7b3e2129605946988d0deb406c2cda38)): New groupId unblocks: []"}
+{"level":30,"time":"2024-11-26T01:51:46.474Z","msg":"got fetch latest sync message [REDACTED]9e5.4 > [REDACTED]9e5 1732573792131 (abfd5d4025a74700a18613fde29eaefb)"}
+{"level":30,"time":"2024-11-26T01:51:46.475Z","msg":"MessageReceiver: handleContacts [REDACTED]9e5.1 > [REDACTED]9e5 1732573798804 (c8ad511e79de45b8b46a351ca5d88c6d)"}
+{"level":30,"time":"2024-11-26T01:51:46.475Z","msg":"got fetch latest sync message [REDACTED]9e5.4 > [REDACTED]9e5 1732573801271 (8d7e8d3fa7e14c3381e67d3e944b24ad)"}
+{"level":30,"time":"2024-11-26T01:51:46.475Z","msg":"sent message to [REDACTED]9e5 1732573811427 from [REDACTED]9e5.4 > [REDACTED]9e5 1732573811427 (b02f051afb9e41eabb4995a136a066c3)"}
+{"level":30,"time":"2024-11-26T01:51:46.475Z","msg":"MessageReceiver.handleSentMessage [REDACTED]9e5.4 > [REDACTED]9e5 1732573811427 (b02f051afb9e41eabb4995a136a066c3)"}
+{"level":30,"time":"2024-11-26T01:51:46.476Z","msg":"got fetch latest sync message [REDACTED]9e5.4 > [REDACTED]9e5 1732573812438 (878cc5a7abf74b9d832573ffded2303f)"}
+{"level":30,"time":"2024-11-26T01:51:46.476Z","msg":"MessageReceiver.handleCallLogEvent [REDACTED]9e5.1 > [REDACTED]9e5 1732573848275 (f145bc37b45d4431bd655a339cb7ef15)"}
+{"level":30,"time":"2024-11-26T01:51:46.477Z","msg":"handleCallLogEvent: finished"}
+{"level":30,"time":"2024-11-26T01:51:46.477Z","msg":"got fetch latest sync message [REDACTED]9e5.1 > [REDACTED]9e5 1732573848686 (fbb410628b38496d90038a9d51c8bcf0)"}
+{"level":30,"time":"2024-11-26T01:51:46.478Z","msg":"MessageReceiver.decryptAndCacheBatch fully processed"}
+{"level":30,"time":"2024-11-26T01:51:46.478Z","msg":"onFetchLatestSync: fetching latest manifest"}
+{"level":30,"time":"2024-11-26T01:51:46.478Z","msg":"onContactSync(sent=1732573798804, receivedAt=1732451159468): queueing sync"}
+{"level":30,"time":"2024-11-26T01:51:46.478Z","msg":"doContactSync(sent=1732573798804, receivedAt=1732451159468, isFullSync=true): downloading contact attachment"}
+{"level":30,"time":"2024-11-26T01:51:46.479Z","msg":"GET (REST) https://cdn2.signal.org/attachments/[REDACTED]z4u"}
+{"level":30,"time":"2024-11-26T01:51:46.480Z","msg":"onFetchLatestSync: fetching latest manifest"}
+{"level":30,"time":"2024-11-26T01:51:46.480Z","msg":"incrementProgress: Message count is 20"}
+{"level":30,"time":"2024-11-26T01:51:46.482Z","msg":"handleDataMessage/[REDACTED]9e5 ([REDACTED]646) [REDACTED]9e5.4 1732573811427: starting processing in queue"}
+{"level":30,"time":"2024-11-26T01:51:46.483Z","msg":"handleDataMessage/[REDACTED]9e5 ([REDACTED]646) [REDACTED]9e5.4 1732573811427: duplicate check db lookup needed [REDACTED]646.4-1732573811427"}
+{"level":30,"time":"2024-11-26T01:51:46.483Z","msg":"onFetchLatestSync: fetching latest manifest"}
+{"level":30,"time":"2024-11-26T01:51:46.483Z","msg":"onCallLogEventSync: Processing event (Event: MarkedAsReadInConversation, CallId: 8359169454087750954, Timestamp: 1701552552045)"}
+{"level":30,"time":"2024-11-26T01:51:46.483Z","msg":"onCallLogEventSync: Marking call history read in conversation"}
+{"level":40,"time":"2024-11-26T01:51:46.487Z","msg":"updateExpirationTimer([REDACTED]9e5 ([REDACTED]646), disabled, version=1) source=[REDACTED]9e5 reason=handleDataMessage/[REDACTED]9e5 ([REDACTED]646) [REDACTED]9e5.4 1732573811427: expire version glare"}
+{"level":30,"time":"2024-11-26T01:51:46.488Z","msg":"modifyTargetMessage/[REDACTED]9e5.4 1732573811427: Found 0 early reaction(s) for outgoing message"}
+{"level":30,"time":"2024-11-26T01:51:46.488Z","msg":"handleDataMessage/[REDACTED]9e5 ([REDACTED]646) [REDACTED]9e5.4 1732573811427: Batching save"}
+{"level":30,"time":"2024-11-26T01:51:46.488Z","msg":"onCallLogEventSync: Marked 0 call history messages read"}
+{"level":30,"time":"2024-11-26T01:51:46.488Z","msg":"onFetchLatestSync: fetching latest manifest"}
+{"level":30,"time":"2024-11-26T01:51:46.520Z","msg":"createHTTPSAgent.createConnection(cdn2.signal.org): connected to IPv6 addr after 32ms (attempts v4=0 v6=1)"}
+{"level":30,"time":"2024-11-26T01:51:46.553Z","msg":"GET (REST) https://cdn2.signal.org/attachments/[REDACTED]z4u 200 Streaming with details"}
+{"level":30,"time":"2024-11-26T01:51:46.555Z","msg":"GET (REST) https://cdn2.signal.org/attachments/[REDACTED]z4u 200 Streaming ended"}
+{"level":30,"time":"2024-11-26T01:51:46.565Z","msg":"saveNewMessageBatcher 1"}
+{"level":30,"time":"2024-11-26T01:51:46.570Z","msg":"Message saved 1732573811427"}
+{"level":30,"time":"2024-11-26T01:51:46.570Z","msg":"handleAttachmentDownloadsForNewMessage/[REDACTED]9e5 ([REDACTED]646) [REDACTED]9e5.4 1732573811427: Adding to attachmentDownloadQueue 1732573811427"}
+{"level":30,"time":"2024-11-26T01:51:46.571Z","msg":"modifyTargetMessage/[REDACTED]9e5.4 1732573811427: Found 0 early reaction(s) for outgoing message"}
+{"level":30,"time":"2024-11-26T01:51:46.571Z","msg":"Edits.forMessage attachmentDownloadQueue not empty, not processing edits"}
+{"level":30,"time":"2024-11-26T01:51:46.571Z","msg":"modifyTargetMessage/[REDACTED]9e5.4 1732573811427: 0 edits in second run"}
+{"level":30,"time":"2024-11-26T01:51:46.572Z","msg":"doContactSync(sent=1732573798804, receivedAt=1732451159468, isFullSync=true): got 2 contacts"}
+{"level":30,"time":"2024-11-26T01:51:46.572Z","msg":"doContactSync(sent=1732573798804, receivedAt=1732451159468, isFullSync=true): updated 2 resetting 0"}
+{"level":30,"time":"2024-11-26T01:51:46.576Z","msg":"doContactSync(sent=1732573798804, receivedAt=1732451159468, isFullSync=true): done"}
+{"level":30,"time":"2024-11-26T01:51:46.585Z","msg":"GET (WS) https://chat.signal.org/v1/storage/auth 200 Success"}
+{"level":30,"time":"2024-11-26T01:51:46.587Z","msg":"GET (REST) https://storage.signal.org/v1/storage/manifest/version/177"}
+{"level":30,"time":"2024-11-26T01:51:46.603Z","msg":"MessageReceiver: got request /api/v1/queue/empty"}
+{"level":30,"time":"2024-11-26T01:51:46.604Z","msg":"MessageReceiver: finished processing messages after 'empty', now waiting for application"}
+{"level":30,"time":"2024-11-26T01:51:46.604Z","msg":"Flushing MessageReceiver.decryptAndCacheBatcher batcher items.length=0"}
+{"level":30,"time":"2024-11-26T01:51:46.604Z","msg":"Flushing complete MessageReceiver.decryptAndCacheBatcher for batcher"}
+{"level":30,"time":"2024-11-26T01:51:46.604Z","msg":"Flushing MessageReceiver.cacheRemoveBatcher batcher items.length=1"}
+{"level":30,"time":"2024-11-26T01:51:46.604Z","msg":"GET (WS) https://chat.signal.org/v1/certificate/auth/group?redemptionStartSeconds=1733011200&redemptionEndSeconds=1733097600&zkcCredential=true 200 Success"}
+{"level":30,"time":"2024-11-26T01:51:46.608Z","msg":"maybeFetchNewCredentials: saving 7 new group credentials, cleaning up 2 old group credentials, haveToday=true"}
+{"level":30,"time":"2024-11-26T01:51:46.608Z","msg":"maybeFetchNewCredentials: saving 7 new call link auth credentials, cleaning up 2 old call link auth credentials, haveToday=true"}
+{"level":30,"time":"2024-11-26T01:51:46.608Z","msg":"Flushing complete MessageReceiver.cacheRemoveBatcher for batcher"}
+{"level":30,"time":"2024-11-26T01:51:46.608Z","msg":"MessageReceiver: emitting 'empty' event"}
+{"level":30,"time":"2024-11-26T01:51:46.608Z","msg":"batcher#waitForAllBatchers"}
+{"level":30,"time":"2024-11-26T01:51:46.608Z","msg":"Flushing sql.Client.updateConversationBatcher batcher items.length=4"}
+{"level":30,"time":"2024-11-26T01:51:46.608Z","msg":"Flushing messageBatcher.updateMessageBatcher batcher items.length=0"}
+{"level":30,"time":"2024-11-26T01:51:46.608Z","msg":"Flushing complete messageBatcher.updateMessageBatcher for batcher"}
+{"level":30,"time":"2024-11-26T01:51:46.608Z","msg":"Flushing Whisper.deliveryReceiptBatcher batcher items.length=0"}
+{"level":30,"time":"2024-11-26T01:51:46.608Z","msg":"Flushing complete Whisper.deliveryReceiptBatcher for batcher"}
+{"level":30,"time":"2024-11-26T01:51:46.608Z","msg":"Flushing respondWithProfileKeyBatcher batcher items.length=0"}
+{"level":30,"time":"2024-11-26T01:51:46.608Z","msg":"Flushing complete respondWithProfileKeyBatcher for batcher"}
+{"level":30,"time":"2024-11-26T01:51:46.609Z","msg":"Flushing MessageReceiver.decryptAndCacheBatcher batcher items.length=0"}
+{"level":30,"time":"2024-11-26T01:51:46.609Z","msg":"Flushing complete MessageReceiver.decryptAndCacheBatcher for batcher"}
+{"level":30,"time":"2024-11-26T01:51:46.609Z","msg":"Flushing MessageReceiver.cacheRemoveBatcher batcher items.length=0"}
+{"level":30,"time":"2024-11-26T01:51:46.609Z","msg":"Flushing complete MessageReceiver.cacheRemoveBatcher for batcher"}
+{"level":30,"time":"2024-11-26T01:51:46.609Z","msg":"Flushing changedConvoBatcher batcher items.length=3"}
+{"level":30,"time":"2024-11-26T01:51:46.610Z","msg":"Flushing saveAttachmentDownloadJobs batcher items.length=0"}
+{"level":30,"time":"2024-11-26T01:51:46.610Z","msg":"Flushing complete saveAttachmentDownloadJobs for batcher"}
+{"level":30,"time":"2024-11-26T01:51:46.610Z","msg":"waitBatcher#flushAllWaitBatchers"}
+{"level":30,"time":"2024-11-26T01:51:46.610Z","msg":"Flushing start messageBatcher.saveNewMessageBatcher for waitBatcher items.length=0"}
+{"level":30,"time":"2024-11-26T01:51:46.610Z","msg":"Flushing complete messageBatcher.saveNewMessageBatcher for waitBatcher"}
+{"level":30,"time":"2024-11-26T01:51:46.610Z","msg":"Flushing start processReceiptBatcher for waitBatcher items.length=0"}
+{"level":30,"time":"2024-11-26T01:51:46.610Z","msg":"Flushing complete processReceiptBatcher for waitBatcher"}
+{"level":30,"time":"2024-11-26T01:51:46.610Z","msg":"Flushing start deleteSentProtoBatcher for waitBatcher items.length=0"}
+{"level":30,"time":"2024-11-26T01:51:46.610Z","msg":"Flushing complete deleteSentProtoBatcher for waitBatcher"}
+{"level":30,"time":"2024-11-26T01:51:46.610Z","msg":"Flushing complete changedConvoBatcher for batcher"}
+{"level":40,"time":"2024-11-26T01:51:46.611Z","msg":"ActionRateLogger: got 25 events since 1732585905748: expiration/HYDRATE_EXPIRATION_STATUS,crashReports/SET_COUNT,app/OPEN_INBOX,network/SET_NETWORK_STATUS,network/SET_NETWORK_STATUS,stickers/INSTALL_STICKER_PACK_PENDING,items/PUT_EXTERNAL,items/PUT_EXTERNAL,items/PUT_EXTERNAL,stickers/INSTALL_STICKER_PACK_FULFILLED,items/PUT_EXTERNAL,items/PUT_EXTERNAL,items/PUT_EXTERNAL,items/PUT_EXTERNAL,items/PUT_EXTERNAL,items/PUT_EXTERNAL,items/PUT_EXTERNAL,items/PUT_EXTERNAL,MESSAGE_CHANGED,INBOX/SET_INBOX_ENVELOPE_TIMESTAMP,MESSAGES_ADDED,items/PUT_EXTERNAL,items/PUT_EXTERNAL,CONVERSATIONS_UPDATED,items/PUT_EXTERNAL"}
+{"level":30,"time":"2024-11-26T01:51:46.611Z","msg":"Flushing complete sql.Client.updateConversationBatcher for batcher"}
+{"level":30,"time":"2024-11-26T01:51:46.611Z","msg":"onEmpty: All outstanding database requests complete"}
+{"level":30,"time":"2024-11-26T01:51:46.612Z","msg":"UpdateKeysListener: Next update scheduled for 2024-11-26T12:26:28.937Z"}
+{"level":30,"time":"2024-11-26T01:51:46.612Z","msg":"restartQueuesAndNotificationsOnEmpty: restarting"}
+{"level":30,"time":"2024-11-26T01:51:46.612Z","msg":"NotificationService: enabling"}
+{"level":30,"time":"2024-11-26T01:51:46.613Z","msg":"App loaded - messages: 14"}
+{"level":30,"time":"2024-11-26T01:51:46.613Z","msg":"StartupQueue: Processing 0 actions"}
+{"level":30,"time":"2024-11-26T01:51:46.613Z","msg":"queueAttachmentDownloads([REDACTED]9e5.4 1732573811427}): Queueing 1 attachment downloads"}
+{"level":30,"time":"2024-11-26T01:51:46.613Z","msg":"queueAttachmentDownloads([REDACTED]9e5.4 1732573811427}): Queueing 1 normal attachment downloads"}
+{"level":30,"time":"2024-11-26T01:51:46.614Z","msg":"queueAttachmentDownloads([REDACTED]9e5.4 1732573811427}): Queued 1 total attachment downloads"}
+{"level":30,"time":"2024-11-26T01:51:46.615Z","msg":"Downloading recent attachments for 1 of 1 total messages"}
+{"level":30,"time":"2024-11-26T01:51:46.616Z","msg":"PUT (WS) https://chat.signal.org/v1/devices/capabilities 204 Success"}
+{"level":30,"time":"2024-11-26T01:51:46.616Z","msg":"notFirstRun: not opening inbox"}
+{"level":30,"time":"2024-11-26T01:51:46.616Z","msg":"Start idle detector"}
+{"level":30,"time":"2024-11-26T01:51:46.616Z","msg":"challenge: online, starting 0 queues"}
+{"level":30,"time":"2024-11-26T01:51:46.616Z","msg":"challenge: startAllQueues force=false"}
+{"level":30,"time":"2024-11-26T01:51:46.629Z","msg":"Build expires (local): 2025-02-18T22:33:00.000Z"}
+{"level":30,"time":"2024-11-26T01:51:46.650Z","msg":"maybeFetchNewCredentials: Save complete."}
+{"level":30,"time":"2024-11-26T01:51:46.654Z","msg":"Edits.flushEdits running"}
+{"level":30,"time":"2024-11-26T01:51:46.655Z","msg":"Creating new RoutineProfileRefresher instance with id 2"}
+{"level":30,"time":"2024-11-26T01:51:46.655Z","msg":"RoutineProfileRefresher.start/2: waiting for 0ms"}
+{"level":30,"time":"2024-11-26T01:51:46.655Z","msg":"usernameIntegrity: running the check immediately"}
+{"level":30,"time":"2024-11-26T01:51:46.679Z","msg":"routineProfileRefresh/2: starting"}
+{"level":30,"time":"2024-11-26T01:51:46.679Z","msg":"routineProfileRefresh/2: updating last refresh time"}
+{"level":30,"time":"2024-11-26T01:51:46.684Z","msg":"routineProfileRefresh/2: starting to refresh conversations"}
+{"level":30,"time":"2024-11-26T01:51:46.684Z","msg":"routineProfileRefresh/2: refreshing profile for [REDACTED]111 ([REDACTED]8b5)"}
+{"level":30,"time":"2024-11-26T01:51:46.684Z","msg":"routineProfileRefresh/2: refreshed profile for [REDACTED]111 ([REDACTED]8b5)"}
+{"level":30,"time":"2024-11-26T01:51:46.684Z","msg":"routineProfileRefresh/2: successfully refreshed 1 out of 1 conversation(s)"}
+{"level":30,"time":"2024-11-26T01:51:46.722Z","msg":"createHTTPSAgent.createConnection(chat.signal.org): connected to IPv6 addr after 255ms (attempts v4=0 v6=1)"}
+{"level":30,"time":"2024-11-26T01:51:46.743Z","msg":"createHTTPSAgent.createConnection(storage.signal.org): connected to IPv6 addr after 151ms (attempts v4=0 v6=1)"}
+{"level":30,"time":"2024-11-26T01:51:46.778Z","msg":"AttachmentDownloadManager/startJob(1732573811427.attachment.[REDACTED]RA=): starting job"}
+{"level":30,"time":"2024-11-26T01:51:46.788Z","msg":"AttachmentDownloadManager/runDownloadAttachmentJob/1732573811427.attachment.[REDACTED]RA=: Starting job"}
+{"level":30,"time":"2024-11-26T01:51:46.823Z","msg":"GET (REST) https://cdn2.signal.org/attachments/[REDACTED]-TY"}
+{"level":30,"time":"2024-11-26T01:51:46.849Z","msg":"WebSocketResource(unauthenticated) connected in 385.9ms"}
+{"level":30,"time":"2024-11-26T01:51:46.849Z","msg":"SocketManager: connected unauthenticated socket (localPort: 49110)"}
+{"level":30,"time":"2024-11-26T01:51:46.849Z","msg":"SocketManager: starting expiration timer for unauthenticated socket"}
+{"level":30,"time":"2024-11-26T01:51:46.851Z","msg":"GET (REST) https://cdn2.signal.org/attachments/[REDACTED]-TY 200 Streaming with details"}
+{"level":30,"time":"2024-11-26T01:51:46.852Z","msg":"GET (REST) https://cdn2.signal.org/attachments/[REDACTED]-TY 200 Streaming ended"}
+{"level":30,"time":"2024-11-26T01:51:46.859Z","msg":"AttachmentDownloadManager/startJob(1732573811427.attachment.[REDACTED]RA=): job completed with status: finished"}
+{"level":30,"time":"2024-11-26T01:51:46.884Z","msg":"GET (REST) https://storage.signal.org/v1/storage/manifest/version/177 200 Success"}
+{"level":30,"time":"2024-11-26T01:51:46.884Z","msg":"storageService.sync: updating to remoteVersion=181 sourceDevice=1 from version=177"}
+{"level":30,"time":"2024-11-26T01:51:46.886Z","msg":"storageService.process(181): localRecords=8 localKeys=6 unknownKeys=0 remoteKeys=5"}
+{"level":30,"time":"2024-11-26T01:51:46.886Z","msg":"storageService.process(181): remoteOnlyCount=1 remoteOnlyKeys=[\"181:ktC\"]"}
+{"level":30,"time":"2024-11-26T01:51:46.886Z","msg":"storageService.process(181): localOnlyCount=2 localOnlyKeys=[\"177:+Ut\",\"175:QAw\"]"}
+{"level":30,"time":"2024-11-26T01:51:46.886Z","msg":"storageService.fetchRemoteRecords(181): fetching remote keys count=1"}
+{"level":30,"time":"2024-11-26T01:51:46.887Z","msg":"PUT (REST) https://storage.signal.org/v1/storage/read"}
+{"level":30,"time":"2024-11-26T01:51:46.978Z","msg":"GET (WS) https://chat.signal.org/v1/profile/[REDACTED]9e5/[REDACTED]1b9 (unauth) 200 Success"}
+{"level":30,"time":"2024-11-26T01:51:46.979Z","msg":"getProfile([REDACTED]9e5 ([REDACTED]646)): setting sealedSender to ENABLED (unidentifiedAccess: true, unrestrictedUnidentifiedAccess: false, accessKey: true)"}
+{"level":30,"time":"2024-11-26T01:51:47.035Z","msg":"PUT (REST) https://storage.signal.org/v1/storage/read 200 Success"}
+{"level":30,"time":"2024-11-26T01:51:47.038Z","msg":"storageService.fetchRemoteRecords(181): missing remote keys=[] count=0"}
+{"level":30,"time":"2024-11-26T01:51:47.040Z","msg":"storageService.process(181): attempting to merge records=0"}
+{"level":30,"time":"2024-11-26T01:51:47.040Z","msg":"storageService.process(181): account record=181:ktC"}
+{"level":30,"time":"2024-11-26T01:51:47.088Z","msg":"Our profile key service: updating profile key"}
+{"level":40,"time":"2024-11-26T01:51:47.109Z","msg":"ActionRateLogger: got 25 events since 1732585906611: app/INITIAL_LOAD_COMPLETE,items/PUT_EXTERNAL,items/PUT_EXTERNAL,items/PUT_EXTERNAL,MESSAGE_CHANGED,CONVERSATIONS_UPDATED,callHistory/UPDATE_UNREAD,items/PUT_EXTERNAL,items/PUT_EXTERNAL,MESSAGE_CHANGED,items/REMOVE_EXTERNAL,items/PUT_EXTERNAL,items/PUT_EXTERNAL,items/PUT_EXTERNAL,items/PUT_EXTERNAL,items/PUT_EXTERNAL,items/PUT_EXTERNAL,items/PUT_EXTERNAL,items/PUT_EXTERNAL,items/PUT_EXTERNAL,items/PUT_EXTERNAL,items/PUT_EXTERNAL,items/PUT_EXTERNAL,items/PUT_EXTERNAL,items/PUT_EXTERNAL"}
+{"level":30,"time":"2024-11-26T01:51:47.138Z","msg":"storageService.applyUnknownFields: Applying unknown fields for [REDACTED]9e5 ([REDACTED]646)"}
+{"level":30,"time":"2024-11-26T01:51:47.138Z","msg":"storageService.merge(181:ktC [REDACTED]9e5 ([REDACTED]646)): merged item type=4 oldID=177:+Ut conflict=false shouldDrop=false details=[\"local pinned=0\",\"remote pinned=0\",\"unpinning=0\",\"pinning=0\",\"adding unknown fields\"]"}
+{"level":30,"time":"2024-11-26T01:51:47.138Z","msg":"storageService.process(181): processed records=1"}
+{"level":30,"time":"2024-11-26T01:51:47.139Z","msg":"storageService.process(181): updated conversations=1"}
+{"level":30,"time":"2024-11-26T01:51:47.139Z","msg":"storageService.process(181): kicking off profile fetches=0"}
+{"level":30,"time":"2024-11-26T01:51:47.139Z","msg":"storageService.process(181): dropped keys=[] count=0"}
+{"level":30,"time":"2024-11-26T01:51:47.139Z","msg":"storageService.process(181): unknown records=[] count=0"}
+{"level":30,"time":"2024-11-26T01:51:47.142Z","msg":"storageService.process(181): error records=[] count=0"}
+{"level":30,"time":"2024-11-26T01:51:47.144Z","msg":"storageService.process(181): pending deletes=[] count=0"}
+{"level":30,"time":"2024-11-26T01:51:47.148Z","msg":"storageService.process(181): localKey=175:QAw was not in remote manifest"}
+{"level":30,"time":"2024-11-26T01:51:47.148Z","msg":"storageService.process(181): conflictCount=0"}
+{"level":30,"time":"2024-11-26T01:51:47.148Z","msg":"storageService.sync: updated to version=181 conflicts=0"}
+{"level":30,"time":"2024-11-26T01:51:47.155Z","msg":"storageService.sync: complete"}
+{"level":30,"time":"2024-11-26T01:51:47.155Z","msg":"GET (REST) https://chat.signal.org/v1/accounts/whoami"}
+{"level":30,"time":"2024-11-26T01:51:47.417Z","msg":"createHTTPSAgent.createConnection(chat.signal.org): connected to IPv6 addr after 262ms (attempts v4=0 v6=1)"}
+{"level":30,"time":"2024-11-26T01:51:47.550Z","msg":"GET (REST) https://chat.signal.org/v1/accounts/whoami 200 Success"}
+{"level":30,"time":"2024-11-26T01:51:47.552Z","msg":"usernameIntegrity: check pass"}
+{"level":30,"time":"2024-11-26T01:51:47.553Z","msg":"buildGetProfileOptions([REDACTED]9e5 ([REDACTED]646)): using unexpired profile key credential"}
+{"level":30,"time":"2024-11-26T01:51:47.553Z","msg":"getProfile([REDACTED]9e5 ([REDACTED]646)): Fetching profile (versioned, unauth: accessKey)"}
+{"level":30,"time":"2024-11-26T01:51:47.554Z","msg":"GET (WS) https://chat.signal.org/v1/profile/[REDACTED]9e5/[REDACTED]1b9 (unauth)"}
+{"level":30,"time":"2024-11-26T01:51:47.613Z","msg":"NotificationService not updating notifications. Notifications are enabled; app is focused; there is no notification data"}
+{"level":30,"time":"2024-11-26T01:51:47.683Z","msg":"GET (WS) https://chat.signal.org/v1/profile/[REDACTED]9e5/[REDACTED]1b9 (unauth) 200 Success"}
+{"level":30,"time":"2024-11-26T01:51:47.683Z","msg":"getProfile([REDACTED]9e5 ([REDACTED]646)): setting sealedSender to ENABLED (unidentifiedAccess: true, unrestrictedUnidentifiedAccess: false, accessKey: true)"}
+{"level":30,"time":"2024-11-26T01:51:47.701Z","msg":"storageService.sync: starting... ignoreConflicts=true, reason=upload/storageServiceUploadJob/doInstallServicePack"}
+{"level":30,"time":"2024-11-26T01:51:47.702Z","msg":"storageService.sync: fetching latest after version=181"}
+{"level":30,"time":"2024-11-26T01:51:47.702Z","msg":"storageService.sync: fetch start"}
+{"level":30,"time":"2024-11-26T01:51:47.702Z","msg":"GET (WS) https://chat.signal.org/v1/storage/auth"}
+{"level":30,"time":"2024-11-26T01:51:47.708Z","msg":"usernameIntegrity: running the check in 86399994ms"}
+{"level":30,"time":"2024-11-26T01:51:47.832Z","msg":"GET (WS) https://chat.signal.org/v1/storage/auth 200 Success"}
+{"level":30,"time":"2024-11-26T01:51:47.840Z","msg":"GET (REST) https://storage.signal.org/v1/storage/manifest/version/181"}
+{"level":30,"time":"2024-11-26T01:51:47.859Z","msg":"checkExpiringMessages: checking for expiring messages"}
+{"level":30,"time":"2024-11-26T01:51:47.862Z","msg":"checkExpiringMessages: found no messages to expire"}
+{"level":30,"time":"2024-11-26T01:51:47.982Z","msg":"GET (REST) https://storage.signal.org/v1/storage/manifest/version/181 204 Success"}
+{"level":30,"time":"2024-11-26T01:51:47.983Z","msg":"storageService.sync: no newer manifest, ok"}
+{"level":30,"time":"2024-11-26T01:51:47.983Z","msg":"storageService.sync: no updates, version=181"}
+{"level":30,"time":"2024-11-26T01:51:47.983Z","msg":"storageService.upload/storageServiceUploadJob/doInstallServicePack/182: will update to manifest version"}
+{"level":30,"time":"2024-11-26T01:51:47.985Z","msg":"storageService.upload(182): generating manifest new=false"}
+{"level":30,"time":"2024-11-26T01:51:47.986Z","msg":"ConversationController.checkForConflicts: starting..."}
+{"level":30,"time":"2024-11-26T01:51:47.986Z","msg":"checkForConflicts: complete!"}
+{"level":30,"time":"2024-11-26T01:51:47.987Z","msg":"storageService.applyUnknownFields: Applying unknown fields for [REDACTED]9e5 ([REDACTED]646)"}
+{"level":30,"time":"2024-11-26T01:51:47.993Z","msg":"storageService.upload(182): adding storyDistributionLists=1"}
+{"level":30,"time":"2024-11-26T01:51:47.994Z","msg":"storageService.upload(182): adding uninstalled stickerPacks=0"}
+{"level":30,"time":"2024-11-26T01:51:47.994Z","msg":"storageService.upload(182): adding installed stickerPacks=3"}
+{"level":30,"time":"2024-11-26T01:51:47.995Z","msg":"storageService.upload(182): adding key=182:Qvp"}
+{"level":30,"time":"2024-11-26T01:51:47.995Z","msg":"storageService.upload(182): adding key=182:INe"}
+{"level":30,"time":"2024-11-26T01:51:47.995Z","msg":"storageService.upload(182): adding callLinks=0"}
+{"level":30,"time":"2024-11-26T01:51:47.995Z","msg":"storageService.upload(182): adding defunctCallLinks=0"}
+{"level":30,"time":"2024-11-26T01:51:47.995Z","msg":"storageService.upload(182): adding pendingCallLinks=0"}
+{"level":30,"time":"2024-11-26T01:51:47.995Z","msg":"storageService.upload(182): adding unknown records=[] count=0"}
+{"level":30,"time":"2024-11-26T01:51:47.995Z","msg":"storageService.upload(182): adding error records=[] count=0"}
+{"level":30,"time":"2024-11-26T01:51:47.995Z","msg":"storageService.upload(182): deleting extra keys=[] count=0"}
+{"level":30,"time":"2024-11-26T01:51:48.000Z","msg":"storageService.upload(182): inserting=2 deleting=0"}
+{"level":30,"time":"2024-11-26T01:51:48.001Z","msg":"PUT (REST) https://storage.signal.org/v1/storage/"}
+{"level":30,"time":"2024-11-26T01:51:48.152Z","msg":"PUT (REST) https://storage.signal.org/v1/storage/ 200 Success"}
+{"level":30,"time":"2024-11-26T01:51:48.153Z","msg":"storageService.upload(182): upload complete, updating items=2"}
+{"level":30,"time":"2024-11-26T01:51:48.153Z","msg":"storageService.upload(182): setting new manifestVersion"}
+{"level":30,"time":"2024-11-26T01:51:48.168Z","msg":"JobQueueDatabaseStore adding job [REDACTED]d63 to queue \"single proto\""}
+{"level":30,"time":"2024-11-26T01:51:48.172Z","msg":"single proto job queue: added new job [REDACTED]d63"}
+{"level":30,"time":"2024-11-26T01:51:48.173Z","msg":"single proto job queue: enqueuing job [REDACTED]d63"}
+{"level":30,"time":"2024-11-26T01:51:48.175Z","msg":"single proto job queue: running job [REDACTED]d63, attempt 1 of 110"}
+{"level":30,"time":"2024-11-26T01:51:48.176Z","msg":"single proto job queue, job ID [REDACTED]d63, attempt 1: starting fetchLatestManifestSync send to [REDACTED]9e5 with timestamp 1732585908167"}
+{"level":30,"time":"2024-11-26T01:51:48.183Z","msg":"enqueueSessionJob(15): queuing task doSendMessage([REDACTED]9e5:[REDACTED]9e5.2, 1732585908167), waited 0ms"}
+{"level":30,"time":"2024-11-26T01:51:48.183Z","msg":"enqueueSessionJob(15): running task doSendMessage([REDACTED]9e5:[REDACTED]9e5.2, 1732585908167), waited 0ms"}
+{"level":30,"time":"2024-11-26T01:51:48.184Z","msg":"enqueueSessionJob(16): queuing task doSendMessage([REDACTED]9e5:[REDACTED]9e5.1, 1732585908167), waited 0ms"}
+{"level":30,"time":"2024-11-26T01:51:48.184Z","msg":"enqueueSessionJob(16): running task doSendMessage([REDACTED]9e5:[REDACTED]9e5.1, 1732585908167), waited 0ms"}
+{"level":30,"time":"2024-11-26T01:51:48.184Z","msg":"enqueueSessionJob(17): queuing task doSendMessage([REDACTED]9e5:[REDACTED]9e5.4, 1732585908167), waited 0ms"}
+{"level":30,"time":"2024-11-26T01:51:48.184Z","msg":"enqueueSessionJob(17): running task doSendMessage([REDACTED]9e5:[REDACTED]9e5.4, 1732585908167), waited 0ms"}
+{"level":30,"time":"2024-11-26T01:51:48.189Z","msg":"storageService.sync: starting... ignoreConflicts=false, reason=syncFetchLatest"}
+{"level":30,"time":"2024-11-26T01:51:48.189Z","msg":"storageService.sync: fetching latest after version=182"}
+{"level":30,"time":"2024-11-26T01:51:48.189Z","msg":"storageService.sync: fetch start"}
+{"level":30,"time":"2024-11-26T01:51:48.190Z","msg":"GET (WS) https://chat.signal.org/v1/storage/auth"}
+{"level":30,"time":"2024-11-26T01:51:48.192Z","msg":"@signalapp/libsignal-client Building PreKeyWhisperMessage for: [REDACTED]9e5.2 with preKeyId: 8 (session created at 1732451188) libsignal_protocol::session_cipher /home/libsignal/src/rust/protocol/src/session_cipher.rs:77"}
+{"level":30,"time":"2024-11-26T01:51:48.193Z","msg":"commitZoneChanges(storeSession): pending sender keys 0, pending sessions 1, pending unprocessed 0"}
+{"level":30,"time":"2024-11-26T01:51:48.194Z","msg":"commitZoneChanges(storeSession): pending sender keys 0, pending sessions 1, pending unprocessed 0"}
+{"level":30,"time":"2024-11-26T01:51:48.194Z","msg":"commitZoneChanges(storeSession): pending sender keys 0, pending sessions 1, pending unprocessed 0"}
+{"level":30,"time":"2024-11-26T01:51:48.199Z","msg":"PUT (WS) https://chat.signal.org/v1/messages/[REDACTED]9e5?story=false"}
+{"level":30,"time":"2024-11-26T01:51:48.318Z","msg":"GET (WS) https://chat.signal.org/v1/storage/auth 200 Success"}
+{"level":30,"time":"2024-11-26T01:51:48.324Z","msg":"GET (REST) https://storage.signal.org/v1/storage/manifest/version/182"}
+{"level":50,"time":"2024-11-26T01:51:48.329Z","msg":"PUT (WS) https://chat.signal.org/v1/messages/[REDACTED]9e5?story=false 409 Error"}
+{"level":30,"time":"2024-11-26T01:51:48.331Z","msg":"archiveSession: session for [REDACTED]9e5:[REDACTED]9e5.4"}
+{"level":30,"time":"2024-11-26T01:51:48.331Z","msg":"enqueueSessionJob(18): queuing task _archiveSession([REDACTED]9e5:[REDACTED]9e5.4), waited 0ms"}
+{"level":30,"time":"2024-11-26T01:51:48.331Z","msg":"enqueueSessionJob(18): running task _archiveSession([REDACTED]9e5:[REDACTED]9e5.4), waited 0ms"}
+{"level":30,"time":"2024-11-26T01:51:48.332Z","msg":"commitZoneChanges(storeSession): pending sender keys 0, pending sessions 1, pending unprocessed 0"}
+{"level":30,"time":"2024-11-26T01:51:48.336Z","msg":"GET (REST) https://chat.signal.org/v2/keys/[REDACTED]9e5/*"}
+{"level":30,"time":"2024-11-26T01:51:48.468Z","msg":"GET (REST) https://storage.signal.org/v1/storage/manifest/version/182 204 Success"}
+{"level":30,"time":"2024-11-26T01:51:48.468Z","msg":"storageService.sync: no newer manifest, ok"}
+{"level":30,"time":"2024-11-26T01:51:48.469Z","msg":"storageService.sync: no updates, version=182"}
+{"level":30,"time":"2024-11-26T01:51:48.487Z","msg":"GET (REST) https://chat.signal.org/v2/keys/[REDACTED]9e5/* 200 Success"}
+{"level":30,"time":"2024-11-26T01:51:48.489Z","msg":"enqueueSessionJob(19): queuing task doSendMessage([REDACTED]9e5:[REDACTED]9e5.2, 1732585908167), waited 0ms"}
+{"level":30,"time":"2024-11-26T01:51:48.489Z","msg":"enqueueSessionJob(19): running task doSendMessage([REDACTED]9e5:[REDACTED]9e5.2, 1732585908167), waited 0ms"}
+{"level":30,"time":"2024-11-26T01:51:48.490Z","msg":"enqueueSessionJob(20): queuing task doSendMessage([REDACTED]9e5:[REDACTED]9e5.1, 1732585908167), waited 0ms"}
+{"level":30,"time":"2024-11-26T01:51:48.490Z","msg":"enqueueSessionJob(20): running task doSendMessage([REDACTED]9e5:[REDACTED]9e5.1, 1732585908167), waited 0ms"}
+{"level":30,"time":"2024-11-26T01:51:48.491Z","msg":"@signalapp/libsignal-client Building PreKeyWhisperMessage for: [REDACTED]9e5.2 with preKeyId: 8 (session created at 1732451188) libsignal_protocol::session_cipher /home/libsignal/src/rust/protocol/src/session_cipher.rs:77"}
+{"level":30,"time":"2024-11-26T01:51:48.492Z","msg":"commitZoneChanges(storeSession): pending sender keys 0, pending sessions 1, pending unprocessed 0"}
+{"level":30,"time":"2024-11-26T01:51:48.492Z","msg":"commitZoneChanges(storeSession): pending sender keys 0, pending sessions 1, pending unprocessed 0"}
+{"level":30,"time":"2024-11-26T01:51:48.497Z","msg":"PUT (WS) https://chat.signal.org/v1/messages/[REDACTED]9e5?story=false"}
+{"level":30,"time":"2024-11-26T01:51:48.631Z","msg":"PUT (WS) https://chat.signal.org/v1/messages/[REDACTED]9e5?story=false 200 Success"}
+{"level":30,"time":"2024-11-26T01:51:48.637Z","msg":"single proto job queue: job [REDACTED]d63 succeeded on attempt 1"}
+{"level":30,"time":"2024-11-26T01:51:53.239Z","msg":"background/shutdown"}
+{"level":30,"time":"2024-11-26T01:51:53.240Z","msg":"AttachmentDownloadManager: stopping. There are 0 active job(s)"}
+{"level":30,"time":"2024-11-26T01:51:53.240Z","msg":"AttachmentBackupManager/stopping"}
+{"level":40,"time":"2024-11-26T01:51:53.240Z","msg":"cancelInflightRequests/shutdown: Cancelling 0 requests"}
+{"level":40,"time":"2024-11-26T01:51:53.240Z","msg":"cancelInflightRequests/shutdown: Done"}
+{"level":30,"time":"2024-11-26T01:51:53.240Z","msg":"Stop idle detector"}
+{"level":30,"time":"2024-11-26T01:51:53.240Z","msg":"background/shutdown: shutting down messageReceiver"}
+{"level":30,"time":"2024-11-26T01:51:53.240Z","msg":"MessageReceiver.stopProcessing"}
+{"level":30,"time":"2024-11-26T01:51:53.240Z","msg":"batcher#waitForAllBatchers"}
+{"level":30,"time":"2024-11-26T01:51:53.240Z","msg":"Flushing sql.Client.updateConversationBatcher batcher items.length=0"}
+{"level":30,"time":"2024-11-26T01:51:53.240Z","msg":"Flushing complete sql.Client.updateConversationBatcher for batcher"}
+{"level":30,"time":"2024-11-26T01:51:53.240Z","msg":"Flushing messageBatcher.updateMessageBatcher batcher items.length=0"}
+{"level":30,"time":"2024-11-26T01:51:53.240Z","msg":"Flushing complete messageBatcher.updateMessageBatcher for batcher"}
+{"level":30,"time":"2024-11-26T01:51:53.240Z","msg":"Flushing Whisper.deliveryReceiptBatcher batcher items.length=0"}
+{"level":30,"time":"2024-11-26T01:51:53.241Z","msg":"Flushing complete Whisper.deliveryReceiptBatcher for batcher"}
+{"level":30,"time":"2024-11-26T01:51:53.241Z","msg":"Flushing respondWithProfileKeyBatcher batcher items.length=0"}
+{"level":30,"time":"2024-11-26T01:51:53.242Z","msg":"Flushing complete respondWithProfileKeyBatcher for batcher"}
+{"level":30,"time":"2024-11-26T01:51:53.242Z","msg":"Flushing MessageReceiver.decryptAndCacheBatcher batcher items.length=0"}
+{"level":30,"time":"2024-11-26T01:51:53.242Z","msg":"Flushing complete MessageReceiver.decryptAndCacheBatcher for batcher"}
+{"level":30,"time":"2024-11-26T01:51:53.242Z","msg":"Flushing MessageReceiver.cacheRemoveBatcher batcher items.length=0"}
+{"level":30,"time":"2024-11-26T01:51:53.242Z","msg":"Flushing complete MessageReceiver.cacheRemoveBatcher for batcher"}
+{"level":30,"time":"2024-11-26T01:51:53.242Z","msg":"Flushing changedConvoBatcher batcher items.length=0"}
+{"level":30,"time":"2024-11-26T01:51:53.242Z","msg":"Flushing complete changedConvoBatcher for batcher"}
+{"level":30,"time":"2024-11-26T01:51:53.242Z","msg":"Flushing saveAttachmentDownloadJobs batcher items.length=0"}
+{"level":30,"time":"2024-11-26T01:51:53.242Z","msg":"Flushing complete saveAttachmentDownloadJobs for batcher"}
+{"level":30,"time":"2024-11-26T01:51:53.242Z","msg":"background/shutdown: flushing conversations"}
+{"level":30,"time":"2024-11-26T01:51:53.243Z","msg":"Sleeper: shutting down, settling 0 in-progress sleep calls"}
+{"level":30,"time":"2024-11-26T01:51:53.243Z","msg":"Sleeper: sleep tasks settled"}
+{"level":30,"time":"2024-11-26T01:51:53.243Z","msg":"background/shutdown: shutting down queues"}
+{"level":30,"time":"2024-11-26T01:51:53.243Z","msg":"call link refresh job queue: shutdown: stop accepting new work and drain 1 promise queues"}
+{"level":30,"time":"2024-11-26T01:51:53.243Z","msg":"conversation job queue: shutdown: stop accepting new work and drain 0 promise queues"}
+{"level":30,"time":"2024-11-26T01:51:53.243Z","msg":"groupAvatar job queue: shutdown: stop accepting new work and drain 1 promise queues"}
+{"level":30,"time":"2024-11-26T01:51:53.243Z","msg":"single proto job queue: shutdown: stop accepting new work and drain 1 promise queues"}
+{"level":30,"time":"2024-11-26T01:51:53.243Z","msg":"read sync job queue: shutdown: stop accepting new work and drain 1 promise queues"}
+{"level":30,"time":"2024-11-26T01:51:53.243Z","msg":"view sync job queue: shutdown: stop accepting new work and drain 1 promise queues"}
+{"level":30,"time":"2024-11-26T01:51:53.243Z","msg":"view once open sync job queue: shutdown: stop accepting new work and drain 1 promise queues"}
+{"level":30,"time":"2024-11-26T01:51:53.243Z","msg":"remove storage key job queue: shutdown: stop accepting new work and drain 1 promise queues"}
+{"level":30,"time":"2024-11-26T01:51:53.243Z","msg":"report spam job queue: shutdown: stop accepting new work and drain 1 promise queues"}
+{"level":30,"time":"2024-11-26T01:51:53.243Z","msg":"CallLinkFinalizeDeleteManager: stopping. There are 0 active job(s)"}
+{"level":30,"time":"2024-11-26T01:51:53.243Z","msg":"conversation job queue: shutdown: complete"}
+{"level":30,"time":"2024-11-26T01:51:53.243Z","msg":"call link refresh job queue: shutdown: complete"}
+{"level":30,"time":"2024-11-26T01:51:53.243Z","msg":"groupAvatar job queue: shutdown: complete"}
+{"level":30,"time":"2024-11-26T01:51:53.243Z","msg":"single proto job queue: shutdown: complete"}
+{"level":30,"time":"2024-11-26T01:51:53.243Z","msg":"read sync job queue: shutdown: complete"}
+{"level":30,"time":"2024-11-26T01:51:53.243Z","msg":"view sync job queue: shutdown: complete"}
+{"level":30,"time":"2024-11-26T01:51:53.243Z","msg":"view once open sync job queue: shutdown: complete"}
+{"level":30,"time":"2024-11-26T01:51:53.243Z","msg":"remove storage key job queue: shutdown: complete"}
+{"level":30,"time":"2024-11-26T01:51:53.243Z","msg":"report spam job queue: shutdown: complete"}
+{"level":30,"time":"2024-11-26T01:51:53.243Z","msg":"background/shutdown: shutting down conversation queues"}
+{"level":30,"time":"2024-11-26T01:51:53.243Z","msg":"conversation [REDACTED]9e5 ([REDACTED]646) jobQueue shutdown start"}
+{"level":30,"time":"2024-11-26T01:51:53.243Z","msg":"conversation [REDACTED]684 ([REDACTED]84d) jobQueue shutdown start"}
+{"level":30,"time":"2024-11-26T01:51:53.243Z","msg":"conversation [REDACTED]111 ([REDACTED]8b5) jobQueue shutdown start"}
+{"level":30,"time":"2024-11-26T01:51:53.243Z","msg":"conversation [REDACTED]111 ([REDACTED]8b5) no jobQueue to shutdown"}
+{"level":30,"time":"2024-11-26T01:51:53.243Z","msg":"conversation groupv2([REDACTED]vpE=) jobQueue shutdown start"}
+{"level":30,"time":"2024-11-26T01:51:53.243Z","msg":"conversation groupv2([REDACTED]vpE=) no jobQueue to shutdown"}
+{"level":30,"time":"2024-11-26T01:51:53.243Z","msg":"conversation [REDACTED]9e5 ([REDACTED]646) jobQueue shutdown complete"}
+{"level":30,"time":"2024-11-26T01:51:53.243Z","msg":"conversation [REDACTED]684 ([REDACTED]84d) jobQueue shutdown complete"}
+{"level":30,"time":"2024-11-26T01:51:53.243Z","msg":"background/shutdown: all queues shutdown"}
+{"level":30,"time":"2024-11-26T01:51:53.243Z","msg":"background/shutdown: waiting for all batchers"}
+{"level":30,"time":"2024-11-26T01:51:53.243Z","msg":"batcher#waitForAllBatchers"}
+{"level":30,"time":"2024-11-26T01:51:53.243Z","msg":"Flushing sql.Client.updateConversationBatcher batcher items.length=0"}
+{"level":30,"time":"2024-11-26T01:51:53.243Z","msg":"Flushing complete sql.Client.updateConversationBatcher for batcher"}
+{"level":30,"time":"2024-11-26T01:51:53.243Z","msg":"Flushing messageBatcher.updateMessageBatcher batcher items.length=0"}
+{"level":30,"time":"2024-11-26T01:51:53.243Z","msg":"Flushing complete messageBatcher.updateMessageBatcher for batcher"}
+{"level":30,"time":"2024-11-26T01:51:53.243Z","msg":"Flushing Whisper.deliveryReceiptBatcher batcher items.length=0"}
+{"level":30,"time":"2024-11-26T01:51:53.244Z","msg":"Flushing complete Whisper.deliveryReceiptBatcher for batcher"}
+{"level":30,"time":"2024-11-26T01:51:53.244Z","msg":"Flushing respondWithProfileKeyBatcher batcher items.length=0"}
+{"level":30,"time":"2024-11-26T01:51:53.244Z","msg":"Flushing complete respondWithProfileKeyBatcher for batcher"}
+{"level":30,"time":"2024-11-26T01:51:53.244Z","msg":"Flushing MessageReceiver.decryptAndCacheBatcher batcher items.length=0"}
+{"level":30,"time":"2024-11-26T01:51:53.244Z","msg":"Flushing complete MessageReceiver.decryptAndCacheBatcher for batcher"}
+{"level":30,"time":"2024-11-26T01:51:53.244Z","msg":"Flushing MessageReceiver.cacheRemoveBatcher batcher items.length=0"}
+{"level":30,"time":"2024-11-26T01:51:53.244Z","msg":"Flushing complete MessageReceiver.cacheRemoveBatcher for batcher"}
+{"level":30,"time":"2024-11-26T01:51:53.244Z","msg":"Flushing changedConvoBatcher batcher items.length=0"}
+{"level":30,"time":"2024-11-26T01:51:53.244Z","msg":"Flushing complete changedConvoBatcher for batcher"}
+{"level":30,"time":"2024-11-26T01:51:53.244Z","msg":"Flushing saveAttachmentDownloadJobs batcher items.length=0"}
+{"level":30,"time":"2024-11-26T01:51:53.244Z","msg":"Flushing complete saveAttachmentDownloadJobs for batcher"}
+{"level":30,"time":"2024-11-26T01:51:53.244Z","msg":"waitBatcher#waitForAllWaitBatchers"}
+{"level":30,"time":"2024-11-26T01:51:53.244Z","msg":"background/shutdown: waiting for all attachment backups & downloads to finish"}
+{"level":30,"time":"2024-11-26T01:51:53.244Z","msg":"background/shutdown: closing the database"}
+{"level":30,"time":"2024-11-26T01:51:53.244Z","msg":"Client.shutdown"}
+{"level":30,"time":"2024-11-26T01:51:53.244Z","msg":"data.shutdown: shutdown requested. 0 jobs outstanding"}
+{"level":30,"time":"2024-11-26T01:51:53.259Z","msg":"NotificationService: clearing notification and updating"}
+{"level":30,"time":"2024-11-26T01:51:53.259Z","msg":"NotificationService not updating notifications. Notifications are enabled; app is not focused; there is no notification data"}

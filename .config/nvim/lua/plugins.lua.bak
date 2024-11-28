@@ -1,0 +1,157 @@
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not (vim.uv or vim.loop).fs_stat(lazypath) then
+	local lazyrepo = "https://github.com/folke/lazy.nvim.git"
+	local out = vim.fn.system({ "git", "clone", "--filter=blob:none", "--branch=stable", lazyrepo, lazypath })
+	if vim.v.shell_error ~= 0 then
+		vim.api.nvim_echo({
+			{ "Failed to clone lazy.nvim:\n", "ErrorMsg" },
+			{ out, "WarningMsg" },
+			{ "\nPress any key to exit..." },
+		}, true, {})
+		vim.fn.getchar()
+		os.exit(1)
+	end
+end
+vim.opt.rtp:prepend(lazypath)
+require("lazy").setup({
+	spec = {
+		{ --colorscheme plugin
+			"EdenEast/nightfox.nvim",
+			config = function()
+				vim.cmd("colorscheme duskfox")
+			end,
+		},
+		{ --treesitter
+			"nvim-treesitter/nvim-treesitter",
+			config = function()
+				require ("nvim-treesitter.configs").setup ({
+					ensure_installed = { "c", "lua", "vim", "vimdoc", "query" },
+					auto_install = true,
+					highlight = {
+						enable = true },
+						incremental_selection = {
+							enable = true,
+							keymaps = {
+								init_selection = "<Leader>ss", 
+								node_incremental = "<Leader>si",
+								scope_incremental = "<Leader>sc",
+								node_decremental = "<Leader>sd",
+							},
+						},
+					})
+				end 
+			},
+
+			{ --norg file plugin
+				"nvim-neorg/neorg",
+				lazy = false,
+				version = "*",
+				config = function()
+					require("neorg").setup {
+						load = {
+							["core.defaults"] = {},
+							["core.integrations.telescope"] = {},
+							["core.concealer"] = {
+								config = {
+									icon_preset = "diamond",
+								},
+							},
+							["core.dirman"] = {
+								config = {
+									workspaces = {
+										notes = "~/Documents/Notes",
+									},
+									default_workspace = "notes",
+								},
+							},
+							["core.completion"] = {
+								config = {
+									engine = "nvim-cmp",
+								},
+							},
+						},
+					}
+				end,
+			},
+			{ --color definitions colorizer
+				"norcalli/nvim-colorizer.lua",
+				config = function()
+					require("colorizer").setup({ "*" })
+				end,
+			},
+			{ --image support using Kitty
+				"3rd/image.nvim",
+				opts = {},
+			},
+			{ --table mode
+				"dhruvasagar/vim-table-mode",
+			},
+			{ --bottom bar
+				'feline-nvim/feline.nvim', 
+				dependencies = { 'nvim-tree/nvim-web-devicons' },
+				config = function()
+					require('feline').setup()
+				end
+			},
+			{
+				'nvim-telescope/telescope.nvim', tag = '0.1.8',
+				dependencies = { 'nvim-lua/plenary.nvim' }
+			},	
+			{
+				"nvim-neorg/neorg-telescope"
+			},
+
+			{ 
+				"hrsh7th/nvim-cmp",
+				event = "InsertEnter",
+				dependencies = {
+					"hrsh7th/cmp-buffer",
+					"hrsh7th/cmp-path",
+					{
+						"L3MON4D3/LuaSnip",
+						version = "v2.*",
+						build = "make install_jsregexp",
+					},
+					"rafamadriz/friendly-snippets",
+					"onsails/lspkind.nvim", 
+				},
+				config = function()
+					local cmp = require("cmp")
+					local lspkind = require("lspkind")
+					local luasnip = require("luasnip")
+
+					require("luasnip.loaders.from_vscode").lazy_load()
+
+					cmp.setup({
+						snippet = {
+							expand = function(args)
+								luasnip.lsp_expand(args.body)
+							end,
+						},
+						mapping = cmp.mapping.preset.insert({
+							["<C-d>"] = cmp.mapping.scroll_docs(-4),
+							["<C-f>"] = cmp.mapping.scroll_docs(4),
+							["<C-Space>"] = cmp.mapping.complete(),
+							["<C-e>"] = cmp.mapping.close(),
+							["<CR>"] = cmp.mapping.confirm({
+								behavior = cmp.ConfirmBehavior.Replace,
+								select = true,
+							}),
+						}),
+						sources = cmp.config.sources({
+							{ name = "nvim_lsp" },
+							{ name = "neorg" },
+							{ name = "luasnip" },
+							{ name = "buffer" },
+							{ name = "path" },
+						}),
+					})
+
+					vim.cmd([[
+					set completeopt=menuone,noinsert,noselect
+					highlight! default link CmpItemKind CmpItemMenuDefault
+					]])
+				end,
+			},
+		},
+	})
