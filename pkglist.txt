@@ -7,6 +7,7 @@ base
 blueman
 bluez-utils
 bridge-utils
+btop
 cliphist
 downgrade
 duf
