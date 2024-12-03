@@ -10,13 +10,18 @@ autoload -Uz compinit promptinit
 compinit
 promptinit
 # End of lines added by compinstall
+
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.config/zsh_plugins/zsh-z/zsh-z.plugin.zsh
 source ~/.config/zsh_plugins/zsh-history-substring-search/zsh-history-substring-search.plugin.zsh
 
-export EDITOR=nvim
+export EDITOR='nvim'
+export MANPAGER='nvim +Man!'
+
 alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
+alias neodoc='pandoc --from=$HOME/git/norg-pandoc/init.lua'
+
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 bindkey "^[[3~" delete-char
@@ -32,4 +37,3 @@ function y() {
 	rm -f -- "$tmp"
 }
 eval "$(starship init zsh)"
-export MANPAGER='nvim +Man!'

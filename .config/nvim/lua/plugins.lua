@@ -114,12 +114,12 @@ require("lazy").setup({
 				"nvim-lualine/lualine.nvim",
 				dependencies = { "nvim-tree/nvim-web-devicons" },
 				config = function()
-					require('lualine').setup({
+					require("lualine").setup({
 						options = {
 							icons_enabled = true,
-							theme = 'auto',
-							component_separators = { left = '', right = '' },
-							section_separators = { left = '', right = '' },
+							theme = "auto",
+							component_separators = { left = "", right = '' },
+							section_separators = { left = "", right = '' },
 							disabled_filetypes = {
 								statusline = {},
 								winbar = {},
@@ -135,18 +135,18 @@ require("lazy").setup({
 							}
 						},
 						sections = {
-							lualine_a = {'mode'},
-							lualine_b = {'branch', 'diff', 'diagnostics'},
-							lualine_c = {'filetype', 'filename'},
-							lualine_x = {'encoding', 'fileformat'},
-							lualine_y = {'progress'},
-							lualine_z = {'location'}
+							lualine_a = {"mode"},
+							lualine_b = {"branch", 'diff', 'diagnostics'},
+							lualine_c = {"filetype", 'filename'},
+							lualine_x = {"encoding", 'fileformat'},
+							lualine_y = {"progress"},
+							lualine_z = {"location"}
 						},
 						inactive_sections = {
 							lualine_a = {},
 							lualine_b = {},
-							lualine_c = {'filename'},
-							lualine_x = {'location'},
+							lualine_c = {"filename"},
+							lualine_x = {"location"},
 							lualine_y = {},
 							lualine_z = {}
 						},
@@ -162,7 +162,7 @@ require("lazy").setup({
 				tag = "0.1.8",
 				dependencies = { "nvim-lua/plenary.nvim" },
 				config = function()
-					require('telescope').setup({
+					require("telescope").setup({
 						defaults = {
 						}
 					})
@@ -280,7 +280,7 @@ require("lazy").setup({
 				"rcarriga/nvim-notify"
 			},
 			{
-				'stevearc/dressing.nvim',
+				"stevearc/dressing.nvim",
 				opts = {},
 			},
 			{

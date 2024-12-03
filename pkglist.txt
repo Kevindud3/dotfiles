@@ -30,6 +30,7 @@ go
 goverlay
 haveged
 hdparm
+helvum
 hwdetect
 hwinfo
 hypridle

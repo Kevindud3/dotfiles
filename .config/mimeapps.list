@@ -1,6 +1,6 @@
 [Added Associations]
 application/json=org.kde.kwrite.desktop;
-application/pdf=libreoffice-draw.desktop;librewolf.desktop;
+application/pdf=org.pwmt.zathura.desktop;libreoffice-draw.desktop;librewolf.desktop;
 application/x-desktop=leafpad.desktop;leafpad-3.desktop;nvim.desktop;
 application/x-docbook+xml=org.kde.kwrite.desktop;
 application/x-matroska=mpv.desktop;
@@ -52,14 +52,14 @@ x-scheme-handler/http=librewolf.desktop;
 x-scheme-handler/https=librewolf.desktop;
 x-scheme-handler/sgnl=signal-desktop.desktop;signal.desktop;
 x-scheme-handler/signalcaptcha=signal-desktop.desktop;signal.desktop;
-application/x-zerosize=nvim.desktop;
+application/x-zerosize=org.pwmt.zathura.desktop;nvim.desktop;
 application/x-executable=leafpad.desktop;
 text/x-lua=nvim.desktop;
 application/x-compress=org.kde.ark.desktop;
 
 [Default Applications]
 application/json=org.kde.kwrite.desktop;
-application/pdf=librewolf.desktop;
+application/pdf=org.pwmt.zathura.desktop
 application/x-docbook+xml=org.kde.kwrite.desktop;
 application/x-matroska=mpv.desktop;
 application/x-shellscript=leafpad-2.desktop;

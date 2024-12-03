@@ -19,3 +19,5 @@ vim.filetype.add({
   pattern = { [".*/hypr/.*%.conf"] = "hyprlang" },
 })
 vim.wo.conceallevel = 2
+vim.api.nvim_set_keymap('i', '<C-l>', '<c-g>u<Esc>[s1z=`]a<c-g>u', { noremap = true, silent = true })
+vim.g.livepreview_previewer = 'zathura'
