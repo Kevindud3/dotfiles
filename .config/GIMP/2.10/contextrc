@@ -1,8 +1,7 @@
 # GIMP user context
 
-(tool "gimp-smudge-tool")
-(paint-info "gimp-smudge")
-(foreground (color-rgb 0.20392158627510071 0.21960785984992981 0.26274511218070984))
+(tool "gimp-pencil-tool")
+(paint-info "gimp-pencil")
 (brush "2. Hardness 025")
 (dynamics "Dynamics Off")
 (mybrush "100% Opaque")

@@ -3,14 +3,13 @@
 (GimpDeviceInfo "Core Pointer"
     (icon-name "gimp-cursor")
     (name "Core Pointer")
-    (tool-options "GimpSmudgeOptions"
-        (tool "gimp-smudge-tool")
-        (foreground (color-rgb 0.20392158627510071 0.21960785984992981 0.26274511218070984))
+    (tool-options "GimpPencilOptions"
+        (tool "gimp-pencil-tool")
         (brush "2. Hardness 025")
         (dynamics "Dynamics Off")
         (gradient "FG to BG (RGB)")
         (palette "Standard")
-        (brush-size 182)
+        (brush-size 9)
         (brush-spacing 0.050000000000000003)
         (brush-hardness 0.25)
         (brush-force 0.46999999999999997)

@@ -158,7 +158,7 @@ require("lazy").setup({
 				end
 			},
 			{
-				"nvim-telescope/telescope.nvim", 
+				"nvim-telescope/telescope.nvim",
 				tag = "0.1.8",
 				dependencies = { "nvim-lua/plenary.nvim" },
 				config = function()
@@ -184,7 +184,6 @@ require("lazy").setup({
 				init = function()
 					vim.g.coq_settings = {
 						auto_start = true,
-						-- Your COQ settings here
 					}
 				end,
 				config = function()
@@ -283,6 +282,13 @@ require("lazy").setup({
 				"stevearc/dressing.nvim",
 				opts = {},
 			},
+			{
+				"jbyuki/nabla.nvim",
+				keys = {
+					{ "<localleader>p", function() require("nabla").popup() end, desc = "Notation", },
+				},
+			},
+
 			{
 				"folke/which-key.nvim",
 				event = "VeryLazy",

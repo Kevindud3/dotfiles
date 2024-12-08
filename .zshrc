@@ -21,6 +21,7 @@ export MANPAGER='nvim +Man!'
 
 alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
 alias neodoc='pandoc --from=$HOME/git/norg-pandoc/init.lua'
+alias v='nvim'
 
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down

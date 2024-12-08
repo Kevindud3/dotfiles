@@ -1,6 +1,9 @@
 vim.g.mapleader = " "
+--vim.opt.wrap = false
 vim.g.maplocalleader = ","
 vim.opt.clipboard = "unnamedplus"
+--vim.opt.textwidth = 80
+--vim.opt.formatoptions:append("t")
 vim.opt.ignorecase = true
 vim.opt.inccommand = "split"
 vim.opt.number = true
@@ -21,3 +24,12 @@ vim.filetype.add({
 vim.wo.conceallevel = 2
 vim.api.nvim_set_keymap('i', '<C-l>', '<c-g>u<Esc>[s1z=`]a<c-g>u', { noremap = true, silent = true })
 vim.g.livepreview_previewer = 'zathura'
+
+-- Automatically save the file when entering normal mode (only for .norg files)
+vim.api.nvim_create_autocmd("InsertLeave", {
+  pattern = "*.norg",          -- Only apply to .norg files
+  callback = function()
+    vim.cmd("silent! write")   -- Save the file silently
+  end
+})
+

@@ -1,5 +1,6 @@
 alsa-firmware
 alsa-utils
+arc-gtk-theme-eos
 arduino-ide
 b43-fwcutter
 baobab
@@ -17,7 +18,6 @@ endeavouros-keyring
 endeavouros-mirrorlist
 eos-apps-info
 eos-hooks
-eos-lightdm-slick-theme
 eos-log-tool
 eos-packagelist
 eos-rankmirrors
@@ -37,6 +37,8 @@ hypridle
 hyprlock
 hyprpaper
 inetutils
+inkscape
+inotify-tools
 intel-ucode
 jfsutils
 kdeconnect
@@ -74,7 +76,9 @@ piper
 pkgfile
 power-profiles-daemon
 pv
+python-cssselect2
 qbittorrent
+qt5-quickcontrols2
 qt5ct
 qt6ct
 rebuild-detector
@@ -99,10 +103,10 @@ texlive-luatex
 texlive-mathscience
 texlive-metapost
 texlive-music
-texlive-pstricks
 texlive-publishers
 timeshift
 tldr
+tree-sitter-cli
 ttf-opensans
 vi
 virt-manager
