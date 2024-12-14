@@ -145,13 +145,13 @@
         <value type="string" value="librewolf.desktop"/>
       </property>
       <property name="recent" type="array">
+        <value type="string" value="timeshift-gtk.desktop"/>
+        <value type="string" value="xfce-display-settings.desktop"/>
         <value type="string" value="xfce-ui-settings.desktop"/>
         <value type="string" value="xfce-wm-settings.desktop"/>
         <value type="string" value="xfce4-about.desktop"/>
-        <value type="string" value="xfce-display-settings.desktop"/>
         <value type="string" value="org.qbittorrent.qBittorrent.desktop"/>
         <value type="string" value="org.xfce.ristretto.desktop"/>
-        <value type="string" value="timeshift-gtk.desktop"/>
         <value type="string" value="librewolf.desktop"/>
         <value type="string" value="kitty.desktop"/>
         <value type="string" value="xfce-settings-manager.desktop"/>

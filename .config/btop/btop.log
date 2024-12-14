@@ -32,3 +32,10 @@
 
 2024/12/04 (23:07:49) | ===> btop++ v.1.4.0
 2024/12/04 (23:07:49) | WARNING: Intel GPU: Failed to initialize PMU
+
+2024/12/08 (20:47:24) | ===> btop++ v.1.4.0
+2024/12/08 (20:47:24) | WARNING: Intel GPU: Failed to initialize PMU
+2024/12/08 (20:47:36) | ERROR: Exception during Config::unlock() : unordered_map::at
+
+2024/12/08 (20:47:42) | ===> btop++ v.1.4.0
+2024/12/08 (20:47:42) | WARNING: Intel GPU: Failed to initialize PMU

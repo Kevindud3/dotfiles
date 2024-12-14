@@ -118,8 +118,8 @@
          id="rect"
          style="fill:blue;"
          usecurrent="1"
-         width="339.006568728469"
-         height="225.066595603165" />
+         width="381.81855930118"
+         height="358.882508765993" />
       <eventcontext
          id="3dbox"
          style="stroke:none;stroke-linejoin:round;"
@@ -654,7 +654,8 @@
        append_extension="1"
        enable_preview="1"
        path=""
-       use_current_dir="1" />
+       use_current_dir="1"
+       enable_svgexport="0" />
     <group
        id="save_copy"
        default=""
@@ -724,6 +725,15 @@
          category="Text"
          selected="org.inkscape.generate.pdf-latex" />
     </group>
+    <group
+       id="object-properties">
+      <group
+         id="path-panel"
+         precision="2" />
+    </group>
+    <group
+       id="object-properties-widget"
+       expand-props="0" />
   </group>
   <group
      id="printing">

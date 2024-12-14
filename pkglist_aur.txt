@@ -8,5 +8,4 @@ mpdris2
 nordzy-cursors
 nordzy-hyprcursors
 spotdl
-umu-launcher-git
 xdg-terminal-exec-git

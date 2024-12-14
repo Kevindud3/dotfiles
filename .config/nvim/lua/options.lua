@@ -1,9 +1,7 @@
 vim.g.mapleader = " "
---vim.opt.wrap = false
 vim.g.maplocalleader = ","
 vim.opt.clipboard = "unnamedplus"
---vim.opt.textwidth = 80
---vim.opt.formatoptions:append("t")
+vim.opt.formatoptions:append("t")
 vim.opt.ignorecase = true
 vim.opt.inccommand = "split"
 vim.opt.number = true
@@ -16,14 +14,18 @@ vim.opt.splitbelow = true
 vim.opt.splitright = true
 vim.opt.tabstop = 4
 vim.opt.termguicolors = true
+vim.opt.textwidth = 80
 vim.opt.virtualedit = "block"
+vim.opt.wrap = false
 vim.wo.foldlevel = 99
+vim.wo.conceallevel = 2
+vim.g.livepreview_previewer = 'zathura'
+
 vim.filetype.add({
   pattern = { [".*/hypr/.*%.conf"] = "hyprlang" },
 })
-vim.wo.conceallevel = 2
+
 vim.api.nvim_set_keymap('i', '<C-l>', '<c-g>u<Esc>[s1z=`]a<c-g>u', { noremap = true, silent = true })
-vim.g.livepreview_previewer = 'zathura'
 
 -- Automatically save the file when entering normal mode (only for .norg files)
 vim.api.nvim_create_autocmd("InsertLeave", {
@@ -33,3 +35,12 @@ vim.api.nvim_create_autocmd("InsertLeave", {
   end
 })
 
+-- Render latex when entering norg files
+vim.api.nvim_create_autocmd("BufReadPost", {
+  pattern = "*.norg",          -- Only apply to .norg files
+  callback = function()
+    vim.defer_fn(function()
+      vim.cmd("Neorg render-latex")
+    end, 500)  -- Delay in milliseconds
+  end
+})

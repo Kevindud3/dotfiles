@@ -50,6 +50,13 @@ require("lazy").setup({
 				config = function()
 					require("neorg").setup {
 						load = {
+							["core.latex.renderer"] = {
+								config = {
+								--	conceal = false,
+								--	scale = 2,
+									render_on_enter = true,
+								},
+							},
 							["core.defaults"] = {},
 							["core.integrations.telescope"] = {},
 							["core.export"] = {},
@@ -248,22 +255,51 @@ require("lazy").setup({
 				end,
 			},
 			{
-				"nvim-tree/nvim-tree.lua",
-				version = "*",
-				lazy = false,
-				dependencies = {
-					"nvim-tree/nvim-web-devicons",
+				"mikavilpas/yazi.nvim",
+				event = "VeryLazy",
+				keys = {
+					-- 👇 in this section, choose your own keymappings!
+					{
+						"<leader>-",
+						"<cmd>Yazi<cr>",
+						desc = "Open yazi at the current file",
+					},
+					{
+						-- Open in the current working directory
+						"<leader>cw",
+						"<cmd>Yazi cwd<cr>",
+						desc = "Open the file manager in nvim's working directory" ,
+					},
+					{
+						-- NOTE: this requires a version of yazi that includes
+						-- https://github.com/sxyazi/yazi/pull/1305 from 2024-07-18
+						'<c-up>',
+						"<cmd>Yazi toggle<cr>",
+						desc = "Resume the last yazi session",
+					},
 				},
-				config = function()
-					require("nvim-tree").setup {}
-				end,
+				---@type YaziConfig
+				opts = {
+					-- if you want to open yazi instead of netrw, see below for more info
+					open_for_directories = false,
+					keymaps = {
+						show_help = '<f1>',
+					},
+				},
 			},
 			{
-				"startup-nvim/startup.nvim",
-				dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim", "nvim-telescope/telescope-file-browser.nvim" },
+				"goolord/alpha-nvim",
+				-- dependencies = { 'echasnovski/mini.icons' },
+				dependencies = { 'nvim-tree/nvim-web-devicons' },
 				config = function()
-					require "startup".setup()
-				end
+					local startify = require("alpha.themes.startify")
+					-- available: devicons, mini, default is mini
+					-- if provider not loaded and enabled is true, it will try to use another provider
+					startify.file_icons.provider = "devicons"
+					require("alpha").setup(
+					startify.config
+					)
+				end,
 			},
 			{
 				"NStefan002/speedtyper.nvim",
