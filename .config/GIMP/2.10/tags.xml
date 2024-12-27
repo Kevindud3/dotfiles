@@ -8701,43 +8701,127 @@
   <resource identifier="Noto Znamenny Musical Notation" checksum="(null)">
   </resource>
 
+  <resource identifier="OpenDyslexicAlt Nerd Font" checksum="(null)">
+  </resource>
+
+  <resource identifier="OpenDyslexicAlt Nerd Font Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="OpenDyslexicAlt Nerd Font Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="OpenDyslexicAlt Nerd Font Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="OpenDyslexicAlt Nerd Font Propo" checksum="(null)">
+  </resource>
+
+  <resource identifier="OpenDyslexicAlt Nerd Font Propo Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="OpenDyslexicAlt Nerd Font Propo Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="OpenDyslexicAlt Nerd Font Propo Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="OpenDyslexicM Nerd Font" checksum="(null)">
+  </resource>
+
+  <resource identifier="OpenDyslexicM Nerd Font Mono" checksum="(null)">
+  </resource>
+
+  <resource identifier="OpenDyslexicM Nerd Font Propo" checksum="(null)">
+  </resource>
+
+  <resource identifier="OpenDyslexic Nerd Font" checksum="(null)">
+  </resource>
+
+  <resource identifier="OpenDyslexic Nerd Font Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="OpenDyslexic Nerd Font Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="OpenDyslexic Nerd Font Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="OpenDyslexic Nerd Font Propo" checksum="(null)">
+  </resource>
+
+  <resource identifier="OpenDyslexic Nerd Font Propo Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="OpenDyslexic Nerd Font Propo Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="OpenDyslexic Nerd Font Propo Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Open Sans" checksum="(null)">
+  </resource>
+
   <resource identifier="Open Sans" checksum="(null)">
   </resource>
 
   <resource identifier="Open Sans Bold" checksum="(null)">
   </resource>
 
+  <resource identifier="Open Sans Bold Condensed" checksum="(null)">
+  </resource>
+
   <resource identifier="Open Sans Bold Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="Open Sans Condensed, Bold Condensed" checksum="(null)">
+  <resource identifier="Open Sans Bold Italic Condensed" checksum="(null)">
   </resource>
 
-  <resource identifier="Open Sans Condensed, Light Condensed" checksum="(null)">
-  </resource>
-
-  <resource identifier="Open Sans Condensed, Light Italic Condensed" checksum="(null)">
+  <resource identifier="Open Sans Condensed" checksum="(null)">
   </resource>
 
   <resource identifier="Open Sans Italic" checksum="(null)">
   </resource>
 
+  <resource identifier="Open Sans Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Open Sans Italic Condensed" checksum="(null)">
+  </resource>
+
   <resource identifier="Open Sans Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="Open Sans Light Condensed" checksum="(null)">
   </resource>
 
   <resource identifier="Open Sans Light Italic" checksum="(null)">
   </resource>
 
+  <resource identifier="Open Sans Light Italic Condensed" checksum="(null)">
+  </resource>
+
   <resource identifier="Open Sans Semi-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Open Sans Semi-Bold Condensed" checksum="(null)">
   </resource>
 
   <resource identifier="Open Sans Semi-Bold Italic" checksum="(null)">
   </resource>
 
+  <resource identifier="Open Sans Semi-Bold Italic Condensed" checksum="(null)">
+  </resource>
+
   <resource identifier="Open Sans Ultra-Bold" checksum="(null)">
   </resource>
 
+  <resource identifier="Open Sans Ultra-Bold Condensed" checksum="(null)">
+  </resource>
+
   <resource identifier="Open Sans Ultra-Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Open Sans Ultra-Bold Italic Condensed" checksum="(null)">
   </resource>
 
   <resource identifier="Sans-serif" checksum="(null)">

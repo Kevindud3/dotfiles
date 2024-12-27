@@ -11,7 +11,8 @@
 	    "cpu",
 	    "temperature",
 	    "memory",
-	    "gamemode"
+	    "gamemode",
+		"idle_inhibitor"
     ],
     "modules-center": [
 	    "hyprland/workspaces"
@@ -32,11 +33,12 @@
 		"special-visible-only": true,
 		"format": "{icon}",
 		"format-icons": {
-			"1": "<span color=\"#8f00f8\"></span>",
-			"2": "<span color=\"#8f00f8\"></span>",
-			"3": "<span color=\"#8f00f8\"></span>",
-			"4": "<span color=\"#09AAF8\">󰖟</span>",
-			"5": "<span color=\"#B9BABC\"></span>",
+			"6": "<span color=\"#c4a7e7\"></span>",
+			"5": "<span color=\"#c4a7e7\"></span>",
+			"1": "<span color=\"#c4a7e7\"></span>",
+			"2": "<span color=\"#09AAF8\">󰖟</span>",
+			"3": "<span color=\"#4A7033\"></span>",
+			"4": "<span color=\"#B9BABC\"></span>",
 			"magic": "<span color=\"#ffffff\"></span>",
 			"urgent": "",
 			"default": ""
@@ -150,31 +152,37 @@
 	    "exec": "checkupdates | wc -l"       // # of updates
     },
 
-    "gamemode": {
-	    "format": "{glyph}",
-	    "format-alt": "{glyph} {count}",
-	    "glyph": "  " ,
-	    "hide-not-running": true,
-	    "use-icon": true,
-	    "icon-name": "input-gaming-symbolic",
-	    "icon-spacing": 4,
-	    "icon-size": 20,
-	    "tooltip": true,
-	    "tooltip-format": "Games running: {count}"
-    },
-
-    "custom/power": {
-	    "format" : "⏻  ",
-	    "tooltip": false,
-	    "menu": "on-click",
-	    "menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
-	    "menu-actions": {
-		    "shutdown": "shutdown",
-		    "reboot": "reboot",
-		    "suspend": "systemctl suspend",
-		    "hibernate": "systemctl hibernate"
-	    }
-    },
+	"gamemode": {
+		"format": "{glyph}",
+		"format-alt": "{glyph} {count}",
+		"glyph": "  " ,
+		"hide-not-running": true,
+		"use-icon": true,
+		"icon-name": "input-gaming-symbolic",
+		"icon-spacing": 4,
+		"icon-size": 20,
+		"tooltip": true,
+		"tooltip-format": "Games running: {count}"
+	},
+	"idle_inhibitor": {
+		"format": "{icon}",
+		"format-icons": {
+			"activated": " ",
+			"deactivated": " "
+		}
+	},
+	"custom/power": {
+		"format" : "⏻  ",
+		"tooltip": false,
+		"menu": "on-click",
+		"menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
+		"menu-actions": {
+			"shutdown": "systemctl poweroff",
+			"reboot": "systemctl reboot",
+			"suspend": "systemctl suspend",
+			"hibernate": "systemctl hibernate"
+		}
+	},
 }
 
 

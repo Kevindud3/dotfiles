@@ -5,11 +5,15 @@ arduino-ide
 b43-fwcutter
 baobab
 base
+bat
+bc
 blueman
 bluez-utils
 bridge-utils
+brightnessctl
 btop
 cliphist
+detox
 downgrade
 duf
 efibootmgr
@@ -43,6 +47,7 @@ intel-ucode
 jfsutils
 kdeconnect
 kernel-install-for-dracut
+keyd
 kicad
 kitty
 lib32-giflib
@@ -56,6 +61,7 @@ lutris
 man-db
 man-pages
 mpc
+mpd
 mpdscribble
 mpv
 mtools
@@ -84,6 +90,7 @@ qt6ct
 rebuild-detector
 reiserfsprogs
 ristretto
+rmpc
 rofi-wayland
 sddm
 sg3_utils

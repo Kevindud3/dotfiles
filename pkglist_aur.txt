@@ -1,11 +1,12 @@
-cantata
-hyprpolkitagent-git
+hyprpolkitagent
 hyprshot
 hyprsunset
-hyprsysteminfo-git
 librewolf-bin
+mission-center
 mpdris2
 nordzy-cursors
 nordzy-hyprcursors
+rose-pine-cursor
+rose-pine-hyprcursor
 spotdl
 xdg-terminal-exec-git

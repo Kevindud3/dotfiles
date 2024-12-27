@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.1" encoding="UTF-8"?>
 
 <channel name="xfce4-panel" version="1.0">
   <property name="configver" type="int" value="2"/>
@@ -74,7 +74,7 @@
     <property name="plugin-8" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
       <property name="show-notifications" type="bool" value="true"/>
-      <property name="known-players" type="string" value="mpdris2"/>
+      <property name="known-players" type="string" value="mpdris2;org.kde.kdeconnect.app"/>
     </property>
     <property name="plugin-9" type="string" value="power-manager-plugin"/>
     <property name="plugin-10" type="string" value="notification-plugin"/>
@@ -145,6 +145,8 @@
         <value type="string" value="librewolf.desktop"/>
       </property>
       <property name="recent" type="array">
+        <value type="string" value="net.lutris.Lutris.desktop"/>
+        <value type="string" value="rofi.desktop"/>
         <value type="string" value="timeshift-gtk.desktop"/>
         <value type="string" value="xfce-display-settings.desktop"/>
         <value type="string" value="xfce-ui-settings.desktop"/>
@@ -153,8 +155,6 @@
         <value type="string" value="org.qbittorrent.qBittorrent.desktop"/>
         <value type="string" value="org.xfce.ristretto.desktop"/>
         <value type="string" value="librewolf.desktop"/>
-        <value type="string" value="kitty.desktop"/>
-        <value type="string" value="xfce-settings-manager.desktop"/>
       </property>
       <property name="search-actions" type="int" value="7">
         <property name="action-0" type="empty">

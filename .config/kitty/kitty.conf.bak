@@ -5,8 +5,7 @@
 #: kitty has very powerful font management. You can configure
 #: individual font faces and even specify special fonts for particular
 #: characters.
-
- font_family      nerd
+# font_family      nerd
 # bold_font        auto
 # italic_font      auto
 # bold_italic_font auto
@@ -20,7 +19,7 @@
 #: <https://sw.kovidgoyal.net/kitty/kittens/choose-fonts/#font-spec-
 #: syntax>.
 
-# font_size 11.0
+ font_size 12.0
 
 #: Font size (in pts).
 
@@ -1403,7 +1402,7 @@
 
 #: Advanced {{{
 
-shell /usr/bin/fish
+shell /usr/bin/zsh
 
 #: The shell program to execute. The default value of . means to use
 #: the value of of the SHELL environment variable or if unset,
@@ -1413,7 +1412,7 @@ shell /usr/bin/fish
 #: interactive mode and reads its startup rc files. Environment
 #: variables are expanded in this setting.
 
-# editor .
+editor nvim
 
 #: The terminal based text editor (such as vim or nano) to use when
 #: editing the kitty config file or similar tasks.
@@ -2638,3 +2637,17 @@ shell /usr/bin/fish
 
 #: }}}
 
+
+
+# BEGIN_KITTY_FONTS
+font_family      family="JetBrainsMonoNL Nerd Font"
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
+# END_KITTY_FONTS
+
+
+# BEGIN_KITTY_THEME
+# Rosé Pine
+include current-theme.conf
+# END_KITTY_THEME

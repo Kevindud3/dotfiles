@@ -23,7 +23,7 @@
     <property name="DP-5" type="string" value="HKM 24&quot;">
       <property name="Active" type="bool" value="true"/>
       <property name="EDID" type="string" value="5b1f0e87bce8e40076a32a87b7e07a0d3eed615a"/>
-      <property name="Resolution" type="string" value="1280x720"/>
+      <property name="Resolution" type="string" value="1920x1080"/>
       <property name="RefreshRate" type="double" value="60"/>
       <property name="Rotation" type="int" value="0"/>
       <property name="Reflection" type="string" value="0"/>
@@ -33,7 +33,7 @@
         <property name="Y" type="double" value="1"/>
       </property>
       <property name="Position" type="empty">
-        <property name="X" type="int" value="0"/>
+        <property name="X" type="int" value="1280"/>
         <property name="Y" type="int" value="0"/>
       </property>
     </property>
@@ -93,7 +93,7 @@
     <property name="DP-5" type="string" value="HKM 24&quot;">
       <property name="Active" type="bool" value="true"/>
       <property name="EDID" type="string" value="5b1f0e87bce8e40076a32a87b7e07a0d3eed615a"/>
-      <property name="Resolution" type="string" value="1280x720"/>
+      <property name="Resolution" type="string" value="1920x1080"/>
       <property name="RefreshRate" type="double" value="60"/>
       <property name="Rotation" type="int" value="0"/>
       <property name="Reflection" type="string" value="0"/>
@@ -103,7 +103,7 @@
         <property name="Y" type="double" value="1"/>
       </property>
       <property name="Position" type="empty">
-        <property name="X" type="int" value="0"/>
+        <property name="X" type="int" value="1280"/>
         <property name="Y" type="int" value="0"/>
       </property>
     </property>

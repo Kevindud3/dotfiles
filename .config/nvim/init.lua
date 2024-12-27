@@ -1,4 +1,7 @@
-require("options")
-require("plugins")
---vim.opt.spell = true
---vim.opt.spelllang = { "en_us", "pt_br" }
+require ("config.options")
+require ("config.autocomands")
+require ("config.lazy")
+require ("config.keymaps")
+
+vim.notify = require("notify")
+require('scrollEOF').setup()

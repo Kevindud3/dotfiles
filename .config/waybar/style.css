@@ -1,7 +1,7 @@
+@import "./rose-pine.css";
 @define-color endevour #6B42A1;
 @define-color endevour #6B42A1;
 @define-color ende-rgb rgba(107, 66, 161, 0.8);
-@define-color text #ffffff;
 @define-color indigo-1 #4b0082;
 @define-color indigo-2 #34005b;
 @define-color indigo-3 #290047;
@@ -11,12 +11,12 @@
 
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: JetBrainsMonoNLNF;
+    font-family: OpenDyslexicM Nerd Font;
     font-size: 15px;
 }
-
+/*OpenDyslexicM Nerd Font Mono */
 window#waybar {
-    background-color: @indigo-4;
+    background-color: @base;
     transition-property: background-color;
     transition-duration: .5s;
 }
@@ -42,13 +42,13 @@ button {
     /* Avoid rounded borders under each button name */
     border: none;
     border-radius: 0;
-    color: #8f00f8;
+    color: @iris;
 }
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 button:hover {
     background: inherit;
-    box-shadow: inset 0 -3px #6B42A1;
+    box-shadow: inset 0 -3px @rose;
 }
 
 /* you can set a style on hover for any module like this */
@@ -61,14 +61,14 @@ button:hover {
 }
 #workspaces button:hover {
 	box-shadow: inherit;
-	background-color: @indigo-1;
+	background-color: @pine;
 	border: none;
 	border-radius: 30;
 }
 
 #workspaces button.active{
     box-shadow: inherit;
-	box-shadow: inset 0 -5px  @endevour;
+	box-shadow: inset 0 -5px  @iris;
 
 }
 #workspaces button.urgent {
@@ -84,6 +84,7 @@ button:hover {
 #pulseaudio,
 #wireplumber,
 #tray,
+#idle_inhibitor,
 #mode,
 #window,
 #tray menu,
@@ -94,7 +95,7 @@ button:hover {
 }
 #mpd {
     padding: 0 10px;
-    color: #ffffff;
+    color: @text;
 }
 
 #clock {
@@ -163,11 +164,13 @@ label:focus {
 }
 
 #tray {
-	background-color: inherit;
+	    color: @text;
+		background-color: inherit;
 }
 
 #tray > .passive {
     -gtk-icon-effect: dim;
+    color: @text;
 }
 
 #tray > .needs-attention {
@@ -196,4 +199,12 @@ label:focus {
     border-radius: 5px;
     color: @indigo-2;
     background-color: @indigo-2;
+}
+
+#idle_inhibitor {
+    background-color: transparent;
+}
+
+#idle_inhibitor.activated {
+    color: @iris;
 }
