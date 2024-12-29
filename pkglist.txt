@@ -27,8 +27,10 @@ eos-packagelist
 eos-rankmirrors
 eos-settings-xfce4
 ethtool
+eza
 fastfetch
 flatpak
+ghostty
 glances
 go
 goverlay
@@ -49,7 +51,6 @@ kdeconnect
 kernel-install-for-dracut
 keyd
 kicad
-kitty
 lib32-giflib
 lib32-gtk3
 lib32-libva

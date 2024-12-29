@@ -23,12 +23,11 @@ alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
 alias neodoc='pandoc --from=$HOME/git/norg-pandoc/init.lua'
 alias v='nvim'
 alias cd='z'
+alias ls='exa'
 
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 bindkey "^[[3~" delete-char
-
-fastfetch
 
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
@@ -40,3 +39,5 @@ function y() {
 }
 
 eval "$(starship init zsh)"
+sleep 0.03
+fastfetch
