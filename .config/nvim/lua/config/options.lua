@@ -1,0 +1,22 @@
+vim.g.mapleader = " "
+vim.g.maplocalleader = ","
+vim.opt.clipboard = "unnamedplus"
+--vim.opt.formatoptions:append("t")
+vim.opt.ignorecase = true
+vim.opt.inccommand = "split"
+vim.opt.number = true
+vim.opt.relativenumber = true
+vim.opt.scrolloff = 16
+vim.opt.shiftwidth = 4
+vim.opt.spell = true
+vim.opt.spelllang = { "pt_br" }
+vim.opt.splitbelow = true
+vim.opt.splitright = true
+vim.opt.tabstop = 4
+vim.opt.termguicolors = true
+--vim.opt.textwidth = 80
+vim.opt.virtualedit = "block"
+vim.opt.wrap = false
+vim.wo.foldlevel = 99
+vim.opt.undofile = true
+vim.wo.conceallevel = 2

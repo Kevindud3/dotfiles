@@ -1,0 +1,110 @@
+# LaTeX snippet for inserting math mode with content
+snippet in_line_math
+alias math
+ \$| ${0:} |\$
+
+snippet display_math
+alias math
+ \$| \$ \$\$ ${0:} \$\$ \$ |\$
+
+snippet latex_frac
+alias frac
+ \\frac{ ${1:num}}{ ${2:den}}
+
+snippet latex_int
+alias int
+ \\int{ ${1:int}}
+
+snippet latex_int_lim
+alias int_lim
+ \\int_{ ${1:lower}}^{${2:upper}} ${0:expression}
+
+snippet latex_sum
+alias sum
+  \\sum_{ ${1:lower}}^{${2:upper}} ${0:expression}
+
+snippet latex_subscript
+alias sub
+ _{ ${1:sub}}
+
+snippet latex_supscript
+alias ^
+ ^{ ${1:sup}}
+
+snippet latex_prod
+alias prod
+  \\prod_{ ${1:lower}}^{${2:upper}} ${0:expression}
+
+snippet latex_sqrt
+alias sqrt
+  \\sqrt{ ${1:expression}}
+
+snippet latex_lim
+alias lim
+  \\lim_{ ${1:variable} \\to ${2:value}} ${0:expression}
+
+snippet latex_partial
+alias partial
+  \\frac{\\partial ${1:function}}{\\partial ${2:variable}}
+
+snippet latex_infinity
+alias infinity
+ \\infty
+
+snippet latex_image
+alias image
+ \$|\\includegraphics{ ${1:image}}|\$
+
+snippet latex_matrix
+alias matrix
+ \\begin{matrix}
+ ${1:} & ${2:} & ${3:}\\\\
+ ${4:} & ${5:} & ${6:}\\\\
+ ${7:} & ${8:} & ${9:}
+ \\end{matrix}
+
+snippet latex_pmatrix
+alias pmatrix
+ \\begin{pmatrix}
+ ${1:} & ${2:} & ${3:}\\\\
+ ${4:} & ${5:} & ${6:}\\\\
+ ${7:} & ${8:} & ${9:}
+ \\end{pmatrix}
+
+snippet latex_bmatrix
+alias bmatrix
+ \\begin{bmatrix}
+ ${1:} & ${2:} & ${3:}\\\\
+ ${4:} & ${5:} & ${6:}\\\\
+ ${7:} & ${8:} & ${9:}
+ \\end{bmatrix}
+
+snippet latex_Bmatrix
+alias Bmatrix
+ \\begin{Bmatrix}
+ ${1:} & ${2:} & ${3:}\\\\
+ ${4:} & ${5:} & ${6:}\\\\
+ ${7:} & ${8:} & ${9:}
+ \\end{Bmatrix}
+
+snippet latex_vmatrix
+alias vmatrix
+ \\begin{vmatrix}
+ ${1:} & ${2:} & ${3:}\\\\
+ ${4:} & ${5:} & ${6:}\\\\
+ ${7:} & ${8:} & ${9:}
+ \\end{vmatrix}
+
+snippet latex_Vmatrix
+alias Vmatrix
+ \\begin{Vmatrix}
+ ${1:} & ${2:} & ${3:}\\\\
+ ${4:} & ${5:} & ${6:}\\\\
+ ${7:} & ${8:} & ${9:}
+ \\end{Vmatrix}
+
+snippet latex_equation
+alias equation
+ \\begin{equation}
+ ${1:}
+ \\end{equation}

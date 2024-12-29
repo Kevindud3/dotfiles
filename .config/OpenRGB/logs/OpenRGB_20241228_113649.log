@@ -1,0 +1,60 @@
+    OpenRGB v0.9
+    Commit:  from 
+    Launched: 20241228_113649
+====================================================================================================
+
+3     |Info:    Found file: Indigo.orp attempting to validate header
+4     |Info:    Valid v4 profile found for Indigo
+4     |Info:    Found file: Default.orp attempting to validate header
+5     |Info:    Valid v4 profile found for Default
+1040  |Info:    ------------------------------------------------------
+1040  |Info:    |               Start device detection               |
+1040  |Info:    ------------------------------------------------------
+1041  |Info:    Initializing HID interfaces: Success
+1043  |Info:    ------------------------------------------------------
+1043  |Info:    |             Detecting I2C interfaces               |
+1043  |Info:    ------------------------------------------------------
+1043  |Info:    Registering I2C interface: /dev/i2c-3 Device 10DE:2182 Subsystem: 1458:3FBE
+1043  |Info:    Registering I2C interface: /dev/i2c-10 Device 8086:9BC8 Subsystem: 1043:8694
+1043  |Info:    Registering I2C interface: /dev/i2c-1 Device 10DE:2182 Subsystem: 1458:3FBE
+1043  |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+1043  |Info:    Registering I2C interface: /dev/i2c-17 Device 0000:0000 Subsystem: 0000:0000
+1043  |Info:    Registering I2C interface: /dev/i2c-8 Device 8086:9BC8 Subsystem: 1043:8694
+1044  |Info:    Registering I2C interface: /dev/i2c-15 Device 8086:9BC8 Subsystem: 1043:8694
+1044  |Info:    Registering I2C interface: /dev/i2c-6 Device 10DE:1AED Subsystem: 1458:3FBE
+1044  |Info:    Registering I2C interface: /dev/i2c-13 Device 8086:9BC8 Subsystem: 1043:8694
+1044  |Info:    Registering I2C interface: /dev/i2c-4 Device 10DE:2182 Subsystem: 1458:3FBE
+1044  |Info:    Registering I2C interface: /dev/i2c-11 Device 8086:9BC8 Subsystem: 1043:8694
+1044  |Info:    Registering I2C interface: /dev/i2c-2 Device 10DE:2182 Subsystem: 1458:3FBE
+1044  |Info:    Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+1044  |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+1044  |Info:    Registering I2C interface: /dev/i2c-18 Device 0000:0000 Subsystem: 0000:0000
+1045  |Info:    Registering I2C interface: /dev/i2c-9 Device 8086:9BC8 Subsystem: 1043:8694
+1045  |Info:    Registering I2C interface: /dev/i2c-16 Device 8086:9BC8 Subsystem: 1043:8694
+1045  |Info:    Registering I2C interface: /dev/i2c-7 Device 8086:43A3 Subsystem: 1043:8694
+1045  |Info:    Registering I2C interface: /dev/i2c-14 Device 8086:9BC8 Subsystem: 1043:8694
+1045  |Info:    Registering I2C interface: /dev/i2c-5 Device 10DE:2182 Subsystem: 1458:3FBE
+1045  |Info:    Registering I2C interface: /dev/i2c-12 Device 8086:9BC8 Subsystem: 1043:8694
+1045  |Info:    ------------------------------------------------------
+1045  |Info:    |               Detecting I2C devices                |
+1045  |Info:    ------------------------------------------------------
+1514  |Info:    ------------------------------------------------------
+1514  |Info:    |               Detecting I2C PCI devices            |
+1514  |Info:    ------------------------------------------------------
+1515  |Info:    ------------------------------------------------------
+1515  |Info:    |               Detecting HID devices                |
+1515  |Info:    ------------------------------------------------------
+1964  |Info:    [G502 HERO Gaming Mouse] Registering RGB controller
+1965  |Info:    [Keychron Gaming Keyboard 1] Registering RGB controller
+1965  |Info:    ------------------------------------------------------
+1965  |Info:    |            Detecting libusb HID devices            |
+1965  |Info:    ------------------------------------------------------
+1980  |Info:    ------------------------------------------------------
+1980  |Info:    |              Detecting other devices               |
+1980  |Info:    ------------------------------------------------------
+1985  |Info:    ------------------------------------------------------
+1985  |Info:    |                Detection completed                 |
+1985  |Info:    ------------------------------------------------------
+1986  |Info:    Profile loading: Succeeded for G502 HERO Gaming Mouse @ HID: /dev/hidraw1 (Receiver) 
+Wireless Index: 255
+1986  |Info:    Profile loading: Succeeded for Keychron Gaming Keyboard 1 @ HID: /dev/hidraw2
